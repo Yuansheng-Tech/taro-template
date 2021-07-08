@@ -1,0 +1,8 @@
+{
+  "version":"0.0.1",
+  "desc":"0.0.1",
+  "env":"production",
+  "appid": "xxxxx",
+  "privateKeyPath": "xxxx",
+  "id": "xxxxx"
+}

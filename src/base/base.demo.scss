@@ -1,0 +1,164 @@
+$r: 1px * 750 / 750;
+$r2: 7px / 3 * 750 / 750;
+$px: 1px * 750 / 320;
+
+// $base_color: #006e46;
+// $head_color: #ffffff;
+// $select_color: #006e46;
+// $background_color: #ffffff;
+
+$baseSize: 30px;
+
+$bgColor: #eee; //背景灰色
+$mainColor: $base_color;
+$navBgColor: $base_color;
+$mainAdverseColor: #fff;
+
+$borderColor: #ccc;
+$grayColor: #6B6B6B;
+$backgroundColor: $background_color;
+$baseColor: #000;
+$rbaseColor: #fff;
+
+$mainRadius: 8px;
+$baseLineHeight: 80px;
+$basePadding: 20px;
+$baseMargin: 20px;
+
+$greenColor: $base_color;
+$redColor: #e60000;
+
+$black: #000000;
+$white: #ffffff;
+$gray: #6B6B6B;
+
+$gray2: #8c8c8c;
+$gray3: #6b6b6b;
+$gray3: #525252;
+
+$text-color: #000000;
+$text-color-light: #525252;
+$text-color-lighter: #999999;
+
+$border-color: #dddddd;
+$border-radius: 15px;
+$border-btn-radius: 8px;
+
+$image-bg: #f4f4f4;
+
+//基础字体
+$font-size21: 21px;
+$font-size23: 23px;
+$font-size24: 24px;
+$font-size25: 25px;
+$font-size26: 25px;
+$font-size27: 27px;
+$font-size28: 28px;
+$font-size29: 29px;
+$font-size30: 30px;
+$font-size33: 33px;
+$font-size35: 35px;
+$font-size37: 37px;
+$font-size38: 38px;
+$font-size40: 40px;
+$font-size41: 41px;
+$font-size55: 55px;
+$font-size60: 60px;
+$font-size65: 65px;
+// 字体
+$SimHei: SimHei;
+$Adobe:Adobe Heiti Std;
+$FZHei-B01S:FZHei-B01S;
+$FZDaHei-B02S:FZDaHei-B02S;
+$FZDaHei-B02:FZDaHei-B02;
+// 字体颜色
+$font-color:rgba(0, 0, 0, 1);
+//border
+$border:2px solid #7c7c7c;
+
+@mixin setBacImg($url, $width, $height) {
+  background-image: url($url);
+  width: $width;
+  height: $height;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+@mixin setCoverImg($url, $width, $height) {
+  background-image: url($url);
+  width: $width;
+  height: $height;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+@mixin eject($attr, $value) {
+  #{$attr}: $value;
+}
+
+// @mixin calc($prop;
+// $val1;
+// $val2;
+// ) {
+//   ${prop}: calc(~'${val1} - ${val2}');
+//   ${prop}: -moz-calc(~'${val1} - ${val2}');
+//   ${prop}: -webkit-calc(~'${val1} - ${val2}');
+//   ${prop}: -o-calc(~'${val1} - ${val2}');
+// }
+
+// @mixin calc-important($prop;
+// $val1;
+// $val2;
+// ) {
+//   ${prop}: calc(~'${val1} - ${val2}') !important;
+//   ${prop}: -moz-calc(~'${val1} - ${val2}') !important;
+//   ${prop}: -webkit-calc(~'${val1} - ${val2}') !important;
+//   ${prop}: -o-calc(~'${val1} - ${val2}') !important;
+// }
+
+@mixin appearance-none() {
+  appearance: none;
+}
+
+input,
+textarea {
+  @include appearance-none;
+  display: block;
+}
+
+@mixin text-overflow() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin clearfix() {
+  zoom: 1;
+
+  &:after {
+    clear: both;
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+  }
+}
+
+@mixin left() {
+  float: left;
+}
+
+@mixin right() {
+  float: right;
+}
+
+@mixin main-wrap {
+  height: 100%;
+}
+
+@mixin font-family() {
+  font-family: "FZShuTi";
+}
