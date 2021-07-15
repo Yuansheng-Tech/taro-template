@@ -1,16 +1,6 @@
 export default {
   pages: [
-    "pages/index/index",
     "pages/demo/index",
-    "pages/about/index",
-    "pages/menu/index",
-    "pages/mine/index",
-    "pages/address/index",
-    "pages/shop/detail",
-    "pages/goods/detail",
-    "pages/event/index",
-    "pages/goods/index",
-    "pages/shop/index",
   ],
   subpackages: [
     { root: "subPackages", name: "subPackages", pages: ["pages/demo/index"] },

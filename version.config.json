@@ -1,8 +1,8 @@
 {
-  "version": "0.8.0",
-  "desc": "鞋维护首页、订单页、个人中心",
+  "version": "0.0.1",
+  "desc": "0.0.1",
   "env": "production",
   "appid": "wx78819e2711925219",
   "privateKeyPath": "/Users/x/taro-editor/packages/template/private.wx78819e2711925219.key",
-  "id": "963c1ee7-d3e0-493b-8f1d-5624f60f5d05"
+  "id": "xxxxx"
 }

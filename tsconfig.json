@@ -22,14 +22,6 @@
       "node_modules/@types",
       "global.d.ts"
     ],
-    "paths": {
-      "@ysyp/components/*": [
-        "../../packages/components/*"
-      ],
-      "@ysyp/utils/*": [
-        "../../packages/utils/*"
-      ]
-    },
     "lib": [
       "dom",
       "dom.iterable",

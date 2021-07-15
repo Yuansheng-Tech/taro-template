@@ -12,8 +12,10 @@ const config = {
   sourceRoot: 'src',
   outputRoot: 'dist',
   alias: {
-    "@ysyp/components": path.resolve(__dirname, '../../..', 'packages/components'),
-    "@ysyp/utils": path.resolve(__dirname, '../../..', 'packages/utils'),
+    "@ysyp/ui/dist": path.resolve(__dirname, '../../..', 'packages/components/dist'),
+    "@ysyp/ui": path.resolve(__dirname, '../../..', 'packages/components/src/index'),
+    "@ysyp/utils": path.resolve(__dirname, '../../..', 'packages/utils/src/index'),
+    "@ysyp/stores": path.resolve(__dirname, '../../..', 'packages/stores/src/index'),
   },
   plugins: [],
   defineConstants: {
