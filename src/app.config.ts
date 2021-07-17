@@ -1,5 +1,5 @@
 export default {
-  pages: ["pages/demo/index"],
+  pages: ["pages/demo/index", "pages/play/index"],
   subpackages: [
     { root: "subPackages", name: "subPackages", pages: ["pages/demo/index"] },
   ],
@@ -20,7 +20,7 @@ export default {
     backgroundColor: "#fff",
     list: [
       {
-        text: "首页",
+        text: "3D",
         pagePath: "pages/demo/index",
         selectedIconPath:
           "./assets/images/footer/_static_memo_wechat_footers_19151604.png",
@@ -28,8 +28,8 @@ export default {
           "./assets/images/footer/_static_memo_wechat_footers_19151604.png",
       },
       {
-        text: "我的",
-        pagePath: "pages/demo/index",
+        text: "Play",
+        pagePath: "pages/play/index",
         selectedIconPath:
           "./assets/images/footer/_static_memo_wechat_footers_19151604.png",
         iconPath:
