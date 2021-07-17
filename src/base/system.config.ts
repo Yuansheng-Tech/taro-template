@@ -1,8 +1,8 @@
 export default {
-  baseColor: { $mainColor: "#57adad", $redColor: "#e60000", $bgGray: "#eee" },
+  baseColor: { $mainColor: "#006e46", $redColor: "#e60000", $bgGray: "#eee" },
   SysConfig: {
-    appName: "鞋元素 ",
-    slogen: "鞋元素小程序 ",
-    weappId: "7fd6e8d0-73f0-40ca-86fe-fdb3a8c32c27",
+    appName: "语音助手",
+    slogen: "语音助手",
+    weappId: "20f615d5-e54b-4d44-8a87-0e34a7be8524",
   },
 };

@@ -34,9 +34,9 @@ module.exports = {
             }
         },
         lngs: ['en', 'zh', 'jp'],
-        ns: ['shoe8'],
+        ns: ['voice'],
         defaultLng: 'zh',
-        defaultNs: 'shoe8',
+        defaultNs: 'voice',
         // defaultValue: '__STRING_NOT_TRANSLATED__',
         resource: {
             loadPath: 'locales/{{lng}}/{{ns}}.json',

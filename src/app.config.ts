@@ -1,7 +1,5 @@
 export default {
-  pages: [
-    "pages/demo/index",
-  ],
+  pages: ["pages/demo/index"],
   subpackages: [
     { root: "subPackages", name: "subPackages", pages: ["pages/demo/index"] },
   ],
@@ -17,41 +15,25 @@ export default {
     },
   },
   tabBar: {
-    color: "#424143",
-    selectedColor: "#57adad",
+    color: "#ffd803",
+    selectedColor: "#006e46",
     backgroundColor: "#fff",
     list: [
       {
-        text: "鞋元素",
-        pagePath: "pages/index/index",
+        text: "首页",
+        pagePath: "pages/demo/index",
         selectedIconPath:
-          "./assets/images/footer/_static_memo_wechat_footers_shoe8-logo.jpeg",
+          "./assets/images/footer/_static_memo_wechat_footers_19151604.png",
         iconPath:
-          "./assets/images/footer/_static_memo_wechat_footers_shoe8-logo.jpeg",
-      },
-      {
-        text: "介绍",
-        pagePath: "pages/about/index",
-        selectedIconPath:
-          "./assets/images/footer/_static_memo_wechat_footers_shoe.png",
-        iconPath:
-          "./assets/images/footer/_static_memo_wechat_footers_shoe_unselect.png",
-      },
-      {
-        text: "订单",
-        pagePath: "pages/menu/index",
-        selectedIconPath:
-          "./assets/images/footer/_static_memo_wechat_footers_shoe8_order.png",
-        iconPath:
-          "./assets/images/footer/_static_memo_wechat_footers_shoe8_order_unselect.png",
+          "./assets/images/footer/_static_memo_wechat_footers_19151604.png",
       },
       {
         text: "我的",
-        pagePath: "pages/mine/index",
+        pagePath: "pages/demo/index",
         selectedIconPath:
-          "./assets/images/footer/_static_memo_wechat_footers__footer_order_select.png",
+          "./assets/images/footer/_static_memo_wechat_footers_19151604.png",
         iconPath:
-          "./assets/images/footer/_static_memo_wechat_footers__footer_order.png",
+          "./assets/images/footer/_static_memo_wechat_footers_19151604.png",
       },
     ],
   },

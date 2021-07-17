@@ -6,5 +6,31 @@ module.exports = {
       framework: 'react',
       ts: true
     }]
+  ],
+  plugins: [
+    // [
+    //   'import',
+    //   {
+    //     libraryName: '@ysyp/ui',
+    //     libraryDirectory: 'dist',
+    //     camel2DashComponentName: false
+    //   },
+    //   'import @ysyp/ui'
+    // ],
+    // [
+    //   'import',
+    //   {
+    //     libraryName: '@ysyp/stores',
+    //     libraryDirectory: 'dist',
+    //     camel2DashComponentName: false
+    //   },
+    //   'import @ysyp/stores'
+    // ],
+    // ['import', { libraryName: 'lodash', libraryDirectory: '', camel2DashComponentName: false }, 'import lodash'],
+    // [
+    //   'import',
+    //   { libraryName: 'react-use', libraryDirectory: 'esm', camel2DashComponentName: false },
+    //   'import react-use',
+    // ],
   ]
 }
