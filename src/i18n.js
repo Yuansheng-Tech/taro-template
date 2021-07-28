@@ -10,7 +10,7 @@ import { T_URL } from './base/url.config'
 i18next
   .use(Backend)
   .init({
-    // lng: 'voice',
+    // lng: 'shoe8',
     debug: true,
 
     // 浏览器语言检测
@@ -24,8 +24,8 @@ i18next
     // },
     fallbackLng: ['zh'],
     preload: ['zh'],
-    ns: ['voice'],
-    defaultNS: 'voice',
+    ns: ['shoe8'],
+    defaultNS: 'shoe8',
     keySeparator: false, // Allow usage of dots in keys
     nsSeparator: false,
     initImmediate: false,

@@ -1,5 +1,5 @@
 let pages = [
-  'pages/demo/index',
+  'pages/index/index',
 ]
 
 export const subpackages = [
