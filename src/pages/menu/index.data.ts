@@ -1,30 +1,5 @@
 export default [
   {
-    name: "YYSearchBar",
-    text: "搜索框",
-    icon: "",
-    data: {
-      placeholder: "",
-      actionName: "搜索",
-      maxLength: 100,
-      value: "",
-      fixed: false,
-      disabled: false,
-      focus: false,
-      showActionButton: false,
-      inputType: "text",
-      onConfirm: function onConfirm(event) {
-        console.log("onConfirm event", event);
-      },
-      onActionClick: function onActionClick(event) {
-        console.log("onConfirm event", event);
-      },
-      onChange: function onChange(value) {
-        console.log("onChange value, event", value, event);
-      },
-    },
-  },
-  {
     name: "YYSwiper",
     text: "轮播图",
     icon: "",

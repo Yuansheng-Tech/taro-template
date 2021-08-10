@@ -7,7 +7,7 @@ module.exports = {
       ts: true
     }]
   ],
-  plugins: [
+  // plugins: [
     // [
     //   'import',
     //   {
@@ -32,5 +32,5 @@ module.exports = {
     //   { libraryName: 'react-use', libraryDirectory: 'esm', camel2DashComponentName: false },
     //   'import react-use',
     // ],
-  ]
+  // ]
 }

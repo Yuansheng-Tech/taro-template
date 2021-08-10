@@ -1,4 +1,4 @@
-// import { AddressStore } from '@ysyp/stores/dist/address'
+// import { AddressStore } from '@ysyp/stores/src/address'
 
 export class RootStore {
   addressStore

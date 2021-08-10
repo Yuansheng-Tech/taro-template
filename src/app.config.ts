@@ -7,9 +7,9 @@ export default {
     "pages/address/index",
     "pages/shop/detail",
     "pages/goods/detail",
-    "pages/event/index",
     "pages/goods/index",
     "pages/shop/index",
+    "pages/event/index",
   ],
   subpackages: [
     { root: "subPackages", name: "subPackages", pages: ["pages/demo/index"] },
