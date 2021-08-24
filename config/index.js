@@ -28,12 +28,15 @@ const config = {
   },
   framework: 'react',
   mini: {
-    webpackChain(chain) {
+    webpackChain (chain, webpack) {
+      chain.plugin('analyzer')
+        .use(require('webpack-bundle-analyzer').BundleAnalyzerPlugin, []);
+      
       chain.merge({
         optimization: {
           sideEffects: true
         }
-      })
+      });
     },
     postcss: {
       pxtransform: {
