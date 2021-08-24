@@ -1,4 +1,5 @@
 import React from 'react';
+import Taro from "@tarojs/taro";
 import { View, Button } from '@tarojs/components';
 import { openVoice as Voice } from '@ysyp/utils';
 

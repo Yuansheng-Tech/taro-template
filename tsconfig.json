@@ -34,6 +34,9 @@
     "esModuleInterop": true,
     "isolatedModules": true,
     "paths": {
+      "@ysyp/ui": ["../../packages/components"],
+      "@ysyp/utils": ["../../packages/utils"],
+      "@ysyp/stores": ["../../packages/stores"],
       "@ysyp/ui/*": ["../../packages/components/*"],
       "@ysyp/utils/*": ["../../packages/utils/*"],
       "@ysyp/stores/*": ["../../packages/stores/*"]

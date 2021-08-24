@@ -1,5 +1,16 @@
 export default {
-  pages: ["pages/demo/index", "pages/play/index"],
+  pages: [
+    "pages/index/index",
+    "pages/event/index",
+    "pages/menu/index",
+    "pages/mine/index",
+    "pages/address/index",
+    "pages/shop/detail",
+    "pages/goods/detail",
+    "pages/goods/index",
+    "pages/shop/index",
+    "pages/about/index",
+  ],
   subpackages: [
     { root: "subPackages", name: "subPackages", pages: ["pages/demo/index"] },
   ],
@@ -15,25 +26,41 @@ export default {
     },
   },
   tabBar: {
-    color: "#ffd803",
-    selectedColor: "#006e46",
+    color: "#424143",
+    selectedColor: "#57adad",
     backgroundColor: "#fff",
     list: [
       {
-        text: "3D",
-        pagePath: "pages/demo/index",
+        text: "鞋元素",
+        pagePath: "pages/index/index",
         selectedIconPath:
-          "./assets/images/footer/_static_memo_wechat_footers_19151604.png",
+          "./assets/images/footer/_static_memo_wechat_footers_shoe8-logo.jpeg",
         iconPath:
-          "./assets/images/footer/_static_memo_wechat_footers_19151604.png",
+          "./assets/images/footer/_static_memo_wechat_footers_shoe8-logo.jpeg",
       },
       {
-        text: "Play",
-        pagePath: "pages/play/index",
+        text: "介绍",
+        pagePath: "pages/event/index",
         selectedIconPath:
-          "./assets/images/footer/_static_memo_wechat_footers_19151604.png",
+          "./assets/images/footer/_static_memo_wechat_footers_shoe.png",
         iconPath:
-          "./assets/images/footer/_static_memo_wechat_footers_19151604.png",
+          "./assets/images/footer/_static_memo_wechat_footers_shoe_unselect.png",
+      },
+      {
+        text: "订单",
+        pagePath: "pages/menu/index",
+        selectedIconPath:
+          "./assets/images/footer/_static_memo_wechat_footers_shoe8_order.png",
+        iconPath:
+          "./assets/images/footer/_static_memo_wechat_footers_shoe8_order_unselect.png",
+      },
+      {
+        text: "我的",
+        pagePath: "pages/mine/index",
+        selectedIconPath:
+          "./assets/images/footer/_static_memo_wechat_footers__footer_order_select.png",
+        iconPath:
+          "./assets/images/footer/_static_memo_wechat_footers__footer_order.png",
       },
     ],
   },
