@@ -1,47 +1,50 @@
 import React, { Component } from "react";
-import { YYSpaceline, YYH1, YYInfo, YYP, YYImg } from "@ysyp/ui";
+import Taro from "@tarojs/taro";
+import * as YYUI from "@ysyp/ui/dist/index";
+import { fetch } from "@ysyp/utils/dist/fetch";
 
-export default class Index extends Component {
+export default class Index extends Component<any, any> {
+  constructor(props) {
+    super(props);
+    this.state = {
+      data: [],
+    };
+  }
+  async componentWillMount() {
+    const data = (await this.getData("/pages/about/index")) || {};
+    this.setState({
+      data: !data[0] ? [] : JSON.parse(data[0].data || "[]"),
+    });
+  }
+  async getData(path) {
+    const { data } =
+      (await fetch({
+        url: "/wechat/pages",
+        method: "GET",
+        data: {
+          where: {
+            path,
+            wechat: {
+              id: Taro.getStorageSync("wechatId"),
+            },
+          },
+        },
+      })) || {};
+    return data;
+  }
   render() {
+    const { data } = this.state;
     return (
       <>
-        <YYSpaceline
-          {...{
-            content: "",
-            color: "#ed3f14",
-            fontSize: "16px",
-            height: "10px",
-            backgroundColor: "transparent",
-            textAlign: "center",
-          }}
-        />
-        <YYH1 {...{ content: "这是一级标题这是一级标题" }} />
-        <YYInfo {...{ content: "2017-05-07  付引" }} />
-        <YYP
-          {...{
-            content:
-              "这是文本段落。这是文本段落。这是文本段落。这是文本段落。这是文本段落。这是文本段落。这是文本段落。这是文本落。这是文本段落。1234567890123456789012345678901234567890 ABCDEFGHIJKLMNOPQRSTUVWXYZ",
-          }}
-        />
-        <YYImg
-          {...{
-            src: "http://localhost:3333/static/memo/files/hb10.png",
-            mode: "widthFix",
-            height: "150px",
-          }}
-        />
-        <YYP
-          {...{
-            content:
-              "这是文本段落。这是文本段落。这是文本段落。这是文本段落。这是文本段落。这是文本段落。这是文本段落。这是文本落。这是文本段落。1234567890123456789012345678901234567890 ABCDEFGHIJKLMNOPQRSTUVWXYZ",
-          }}
-        />
-        <YYP
-          {...{
-            content:
-              "这是文本段落。这是文本段落。这是文本段落。这是文本段落。这是文本段落。这是文本段落。这是文本段落。这是文本落。这是文本段落。1234567890123456789012345678901234567890 ABCDEFGHIJKLMNOPQRSTUVWXYZ",
-          }}
-        />
+        {data.map((v) => {
+          return React.createElement(
+            YYUI[v.name],
+            {
+              ...v.data,
+            },
+            null
+          );
+        })}
       </>
     );
   }

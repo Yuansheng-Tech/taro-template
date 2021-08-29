@@ -1,74 +1,50 @@
 import React, { Component } from "react";
-import { YYSwiper, YYCartGood, YYCartAdd, YYHtml, YYCartBuy } from "@ysyp/ui";
+import Taro from "@tarojs/taro";
+import * as YYUI from "@ysyp/ui/dist/index";
+import { fetch } from "@ysyp/utils/dist/fetch";
 
-export default class Index extends Component {
+export default class Index extends Component<any, any> {
+  constructor(props) {
+    super(props);
+    this.state = {
+      data: [],
+    };
+  }
+  async componentWillMount() {
+    const data = (await this.getData("/pages/goods/detail")) || {};
+    this.setState({
+      data: !data[0] ? [] : JSON.parse(data[0].data || "[]"),
+    });
+  }
+  async getData(path) {
+    const { data } =
+      (await fetch({
+        url: "/wechat/pages",
+        method: "GET",
+        data: {
+          where: {
+            path,
+            wechat: {
+              id: Taro.getStorageSync("wechatId"),
+            },
+          },
+        },
+      })) || {};
+    return data;
+  }
   render() {
+    const { data } = this.state;
     return (
       <>
-        <YYSwiper
-          {...{
-            vertical: false,
-            items: [
-              {
-                url: "https://yuanshengyoupin.com",
-                image: "http://localhost:3333/static/memo/files/hb10.png",
-                imageStyle: {},
-              },
-              {
-                url: "https://yuanshengyoupin.com",
-                image: "http://localhost:3333/static/memo/files/hb10.png",
-                imageStyle: {},
-              },
-            ],
-          }}
-        />
-        <YYCartGood
-          {...{
-            image: "http://localhost:3333/static/memo/files/hb10.png",
-            value: "领取中心",
-            url: "https://yuanshengyoupin.com",
-            price: 11,
-            originalPrice: 12,
-            borderRadius: "0px",
-            imageMode: "scaleToFill",
-            imageWidth: "100px",
-            imageHeight: "100%",
-            itemPadding: "10px",
-            itemMargin: "0px",
-          }}
-        />
-        <YYCartAdd
-          {...{
-            title: "数量",
-            subTitle: "一件起购",
-            valueNum: 1,
-            stock: 10,
-            step: 1,
-            min: 1,
-            onGetValue:
-              "function onGetValue(val) {\n    console.log('onGetValue', val);\n  }",
-          }}
-        />
-        <YYHtml
-          {...{
-            type: "text",
-            url: "",
-            text: "<span>aaaaaaaaaaaaaaaaaaaaaaa</span>",
-            height: "300px",
-            fullScreen: false,
-          }}
-        />
-        <YYCartBuy
-          {...{
-            addCartText: "加入购物车",
-            buyText: "立即购买",
-            btnRadius: "40px",
-            btnMargin: "10px",
-            onAddCart:
-              "function onAddCart(e) {\n    console.log('e onAddCart', e);\n  }",
-            onBuy: "function onBuy(e) {\n    console.log('e onBuy', e);\n  }",
-          }}
-        />
+        {data.map((v) => {
+          return React.createElement(
+            YYUI[v.name],
+            {
+              ...v.data,
+            },
+            null
+          );
+        })}
       </>
     );
   }

@@ -1,7 +1,7 @@
 export default {
   pages: [
     "pages/index/index",
-    "pages/about/index",
+    "pages/event/index",
     "pages/menu/index",
     "pages/mine/index",
     "pages/address/index",
@@ -9,10 +9,13 @@ export default {
     "pages/goods/detail",
     "pages/goods/index",
     "pages/shop/index",
-    "pages/event/index",
+    "pages/about/index",
   ],
   subpackages: [
-    { root: "subPackages", name: "subPackages", pages: ["pages/demo/index"] },
+    { root: "subPackages", name: "subPackages", pages: [
+      "pages/html/index",
+      "pages/webview/index",
+    ] },
   ],
   window: {
     backgroundTextStyle: "light",
@@ -40,7 +43,7 @@ export default {
       },
       {
         text: "介绍",
-        pagePath: "pages/about/index",
+        pagePath: "pages/event/index",
         selectedIconPath:
           "./assets/images/footer/_static_memo_wechat_footers_shoe.png",
         iconPath:
