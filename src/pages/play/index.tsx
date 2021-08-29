@@ -35,7 +35,7 @@ const YYPlayVioce = () => {
         <Button type="primary" onClick={openVoice}>
           播放语音
         </Button>
-        <Button type="primary" style="margin-top: 10px;" onClick={getAudioObject}>
+        <Button color="primary" style="margin-top: 10px;" onClick={getAudioObject}>
           获取音频对象播放
         </Button>
       </View>

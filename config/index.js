@@ -1,5 +1,5 @@
 const path = require('path');
-
+console.log(path.resolve(__dirname, '..', 'src/base'))
 const config = {
   projectName: 'template',
   date: '2021-6-25',
@@ -12,12 +12,12 @@ const config = {
   sourceRoot: 'src',
   outputRoot: 'dist',
   alias: {
-    // "@ysyp/ui/dist": path.resolve(__dirname, '../../..', 'packages/components/dist'),
-    "@ysyp/ui": path.resolve(__dirname, '../../..', 'packages/components'),
-    "@ysyp/utils": path.resolve(__dirname, '../../..', 'packages/utils'),
-    "@ysyp/stores": path.resolve(__dirname, '../../..', 'packages/stores'),
+    "@base": path.resolve(__dirname, '..', 'src/base'),
+    // "@ysyp/ui": path.resolve(__dirname, '../../..', 'packages/components'),
+    // "@ysyp/utils": path.resolve(__dirname, '../../..', 'packages/utils'),
+    // "@ysyp/stores": path.resolve(__dirname, '../../..', 'packages/stores'),
   },
-  plugins: [],
+  plugins: ['@tarojs/plugin-html'],
   defineConstants: {
   },
   copy: {

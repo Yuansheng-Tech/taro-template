@@ -12,7 +12,10 @@ export default {
     "pages/about/index",
   ],
   subpackages: [
-    { root: "subPackages", name: "subPackages", pages: ["pages/demo/index"] },
+    { root: "subPackages", name: "subPackages", pages: [
+      "pages/html/index",
+      "pages/webview/index",
+    ] },
   ],
   window: {
     backgroundTextStyle: "light",

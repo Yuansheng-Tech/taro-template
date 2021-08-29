@@ -1,20 +1,36 @@
+.rich-text {
+	padding: 20px;
+	background-color: #fff;
+	line-height: 1.1;
+}
+
 ul,
 ol {
 	padding: 0 1rem;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	line-height: 1.1;
+h2 {
+	display: block;
+	font-size: 1.5em;
+	margin-block-start: 0.83em;
+	margin-block-end: 0.83em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	font-weight: bold;
 }
 
 code {
 	background-color: rgba(97, 97, 97, 0.1);
 	color: #616161;
+}
+
+p {
+	margin: 1em 0;
+	display: block;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
 }
 
 pre {
@@ -33,7 +49,7 @@ pre code {
 }
 
 img {
-	max-width: 100%;
+	width: 100%;
 	height: auto;
 }
 
@@ -57,9 +73,9 @@ table {
 }
 
 table td,
-  table th {
+table th {
 	min-width: 1em;
-	border: 2px solid #ced4da;
+	border: 1px solid #ced4da;
 	padding: 3px 5px;
 	vertical-align: top;
 	box-sizing: border-box;

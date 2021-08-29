@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Taro from "@tarojs/taro";
-import * as YYUI from "@ysyp/ui";
+import * as YYUI from "@ysyp/ui/dist/index";
 import { fetch } from "@ysyp/utils/dist/fetch";
 
 export default class Index extends Component<any, any> {
