@@ -34,7 +34,7 @@ export default {
     backgroundColor: "#fff",
     list: [
       {
-        text: "鞋元素",
+        text: "首页",
         pagePath: "pages/index/index",
         selectedIconPath:
           "./assets/images/footer/_static_memo_wechat_footers_shoe8-logo.jpeg",
