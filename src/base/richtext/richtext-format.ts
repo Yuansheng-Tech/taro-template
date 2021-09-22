@@ -25,6 +25,8 @@ export function addClassAndStyle(html) {
     function(str, group, match, index, tpl) {
       if (/style/g.test(str)) {
         str = str.replace(/style="(.*?)"/g, `style="${getBasegetCssToJs(group)}${getCssToJs(group)}$1"`)
+      } else if(group == 'img') {
+        str = `<${group} class=".h5-${group}" style="${getBasegetCssToJs(group)}${getCssToJs(group)}" ${match} />`
       } else {
         str = `<${group} class=".h5-${group}" style="${getBasegetCssToJs(group)}${getCssToJs(group)}" ${match}>`
       }

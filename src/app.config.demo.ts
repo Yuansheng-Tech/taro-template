@@ -7,7 +7,10 @@ export const subpackages = [
     "root": "subPackages",
     "name": "subPackages",
     "pages": [
-      'pages/demo/index',
+      'pages/audio/index',
+      'pages/html/index',
+      'pages/webview/index',
+      'pages/video/index'
     ]
   }
 ]

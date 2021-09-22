@@ -34,9 +34,9 @@ module.exports = {
             }
         },
         lngs: ['en', 'zh', 'jp'],
-        ns: ['shoe8'],
+        ns: ['waimai_user'],
         defaultLng: 'zh',
-        defaultNs: 'shoe8',
+        defaultNs: 'waimai_user',
         // defaultValue: '__STRING_NOT_TRANSLATED__',
         resource: {
             loadPath: 'locales/{{lng}}/{{ns}}.json',

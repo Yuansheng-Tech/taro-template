@@ -1,13 +1,20 @@
 import React, { Component } from "react";
 import Taro from "@tarojs/taro";
-import * as YYUI from "@ysyp/ui/dist/index";
+import * as YYUI from "@ysyp/ui/dist/src/index";
 import { fetch } from "@ysyp/utils/dist/fetch";
+import { useRootStore } from "@base/RootStoreProvider";
 
 export default class Index extends Component<any, any> {
   constructor(props) {
     super(props);
     this.state = {
       data: [],
+    };
+  }
+  onShareAppMessage(res) {
+    return {
+      title: "个人地址",
+      path: "/pages/address/index",
     };
   }
   async componentWillMount() {
@@ -41,6 +48,7 @@ export default class Index extends Component<any, any> {
             YYUI[v.name],
             {
               ...v.data,
+              useRootStore,
             },
             null
           );

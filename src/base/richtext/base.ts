@@ -215,11 +215,8 @@ export const baseCssToJs = {
   ul: `
     display: block;
     list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0;
-    margin-inline-end: 0;
-    padding-inline-start: 40px;
+    margin: 0;
+    padding: 0 1em;
   `,
   menu: `
     display: block;
@@ -242,15 +239,14 @@ export const baseCssToJs = {
   ol: `
     display: block;
     list-style-type: decimal;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0;
-    margin-inline-end: 0;
-    padding-inline-start: 40px;
+    margin: 0;
+    padding: 0 1em;
   `,
   li: `
     display: list-item;
     text-align: -webkit-match-parent;
+    margin: 0;
+    padding: 0;
   `,
   dd: `
     display: block;

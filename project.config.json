@@ -1,7 +1,7 @@
 {
   "miniprogramRoot": "./dist",
-  "projectname": "鞋元素 ",
-  "description": "鞋元素小程序 ",
+  "projectname": "外卖用户端",
+  "description": "",
   "appid": "wx78819e2711925219",
   "setting": {
     "urlCheck": true,

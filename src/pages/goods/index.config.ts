@@ -1,3 +1,5 @@
 export default {
-  navigationBarTitleText: "服务列表",
+  enableShareAppMessage: true,
+  enableShareTimeline: true,
+  navigationBarTitleText: "商品列表",
 };

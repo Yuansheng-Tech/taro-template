@@ -13,9 +13,9 @@ const config = {
   outputRoot: 'dist',
   alias: {
     "@base": path.resolve(__dirname, '..', 'src/base'),
-    // "@ysyp/ui": path.resolve(__dirname, '../../..', 'packages/components'),
-    // "@ysyp/utils": path.resolve(__dirname, '../../..', 'packages/utils'),
-    // "@ysyp/stores": path.resolve(__dirname, '../../..', 'packages/stores'),
+    // "@ysyp/ui/dist/src": path.resolve(__dirname, '../../..', 'packages/components/src'),
+    // "@ysyp/utils/dist": path.resolve(__dirname, '../../..', 'packages/utils/src'),
+    // "@ysyp/stores/dist": path.resolve(__dirname, '../../..', 'packages/stores/src'),
   },
   plugins: ['@tarojs/plugin-html'],
   defineConstants: {

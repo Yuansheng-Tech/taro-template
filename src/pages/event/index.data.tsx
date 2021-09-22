@@ -1,0 +1,1 @@
+export default () => <div><p></p><img src="//file.yuansheng.com/static/memo/weappfile/file-1631120258679" /><img src="https://file.biji77.com/goods/54964.jpg" /><img src="https://file.biji77.com/goods/%E9%85%B8%E5%A5%B6%E8%8A%92%E6%9E%9C%E7%87%95%E9%BA%A6%E7%9B%92%E5%AD%901.jpg" /><p></p><p></p></div>;

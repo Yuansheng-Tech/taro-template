@@ -8,12 +8,14 @@ export default [
       items: [
         {
           url: "https://yuanshengyoupin.com",
-          image: "http://localhost:3333/static/memo/files/hb10.png",
+          image:
+            "https://file.biji77.com/goods/%E9%85%B8%E5%A5%B6%E8%8A%92%E6%9E%9C%E7%87%95%E9%BA%A6%E7%9B%92%E5%AD%901.jpg",
           imageStyle: {},
         },
         {
           url: "https://yuanshengyoupin.com",
-          image: "http://localhost:3333/static/memo/files/hb10.png",
+          image:
+            "https://file.biji77.com/goods/%E9%85%B8%E5%A5%B6%E8%8A%92%E6%9E%9C%E7%87%95%E9%BA%A6%E7%9B%92%E5%AD%901.jpg",
           imageStyle: {},
         },
       ],
@@ -24,7 +26,8 @@ export default [
     text: "单个商品",
     icon: "",
     data: {
-      image: "http://localhost:3333/static/memo/files/hb10.png",
+      image:
+        "https://file.biji77.com/goods/%E9%85%B8%E5%A5%B6%E8%8A%92%E6%9E%9C%E7%87%95%E9%BA%A6%E7%9B%92%E5%AD%901.jpg",
       value: "领取中心",
       url: "https://yuanshengyoupin.com",
       price: 11,

@@ -1,21 +1,28 @@
 export default {
   pages: [
     "pages/index/index",
-    "pages/event/index",
-    "pages/menu/index",
     "pages/mine/index",
-    "pages/address/index",
-    "pages/shop/detail",
-    "pages/goods/detail",
+    "pages/dilivery/floor",
+    "pages/cart/index",
+    "pages/search/index",
+    "pages/dilivery/index",
+    "pages/dilivery/basket",
+    "pages/comment/index",
     "pages/goods/index",
+    "pages/shop/detail",
     "pages/shop/index",
-    "pages/about/index",
   ],
   subpackages: [
-    { root: "subPackages", name: "subPackages", pages: [
-      "pages/html/index",
-      "pages/webview/index",
-    ] },
+    {
+      root: "subPackages",
+      name: "subPackages",
+      pages: [
+        "pages/audio/index",
+        "pages/html/index",
+        "pages/webview/index",
+        "pages/video/index",
+      ],
+    },
   ],
   window: {
     backgroundTextStyle: "light",
@@ -29,41 +36,25 @@ export default {
     },
   },
   tabBar: {
-    color: "#424143",
-    selectedColor: "#57adad",
+    color: "#ffd803",
+    selectedColor: " #006e46",
     backgroundColor: "#fff",
     list: [
       {
         text: "首页",
         pagePath: "pages/index/index",
         selectedIconPath:
-          "./assets/images/footer/_static_memo_wechat_footers_shoe8-logo.jpeg",
+          "./assets/images/footer/http:static_memo_wechat_footers_19151604.png",
         iconPath:
-          "./assets/images/footer/_static_memo_wechat_footers_shoe8-logo.jpeg",
-      },
-      {
-        text: "介绍",
-        pagePath: "pages/event/index",
-        selectedIconPath:
-          "./assets/images/footer/_static_memo_wechat_footers_shoe.png",
-        iconPath:
-          "./assets/images/footer/_static_memo_wechat_footers_shoe_unselect.png",
-      },
-      {
-        text: "订单",
-        pagePath: "pages/menu/index",
-        selectedIconPath:
-          "./assets/images/footer/_static_memo_wechat_footers_shoe8_order.png",
-        iconPath:
-          "./assets/images/footer/_static_memo_wechat_footers_shoe8_order_unselect.png",
+          "./assets/images/footer/http:static_memo_wechat_footers_19151604.png",
       },
       {
         text: "我的",
         pagePath: "pages/mine/index",
         selectedIconPath:
-          "./assets/images/footer/_static_memo_wechat_footers__footer_order_select.png",
+          "./assets/images/footer/http:static_memo_wechat_footers_19151604.png",
         iconPath:
-          "./assets/images/footer/_static_memo_wechat_footers__footer_order.png",
+          "./assets/images/footer/http:static_memo_wechat_footers_19151604.png",
       },
     ],
   },
