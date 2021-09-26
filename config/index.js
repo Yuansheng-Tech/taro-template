@@ -1,5 +1,5 @@
 const path = require('path');
-console.log(path.resolve(__dirname, '..', 'src/base'))
+const versionConfig = require('../version.config.json')
 const config = {
   projectName: 'template',
   date: '2021-6-25',
@@ -17,8 +17,36 @@ const config = {
     // "@ysyp/utils/dist": path.resolve(__dirname, '../../..', 'packages/utils/src'),
     // "@ysyp/stores/dist": path.resolve(__dirname, '../../..', 'packages/stores/src'),
   },
-  plugins: ['@tarojs/plugin-html'],
+  plugins: [
+    '@tarojs/plugin-html',
+    // [
+    //   "@tarojs/plugin-mini-ci",
+    //   {
+    //       weapp: {
+    //           appid: versionConfig.appid,
+    //           privateKeyPath: versionConfig.privateKeyPath,
+    //       },
+    //       // tt: {
+    //       //   email: "字节小程序邮箱",
+    //       //   password: "字节小程序密码"
+    //       // },
+    //       // alipay: {
+    //       //   appId: "支付宝小程序appId",
+    //       //   toolId: "工具id",
+    //       //   privateKeyPath: "密钥文件相对项目根目录的相对路径，例如 key/pkcs8-private-pem"
+    //       // },
+    //       // swan: {
+    //       //   token: "鉴权需要的token令牌"
+    //       // },
+    //       // 版本号
+    //       version: versionConfig.version,
+    //       // 版本发布描述
+    //       desc: versionConfig.desc
+    //   }
+    // ],
+  ],
   defineConstants: {
+    LOCATION_APIKEY: JSON.stringify('3WHBZ-RQEC4-2O5UY-DISRN-4KQFH-5IBR6')
   },
   copy: {
     patterns: [

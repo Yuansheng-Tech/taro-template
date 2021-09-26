@@ -7,10 +7,12 @@ export default {
     "pages/search/index",
     "pages/dilivery/index",
     "pages/dilivery/basket",
+    "pages/login/index",
     "pages/comment/index",
     "pages/goods/index",
     "pages/shop/detail",
     "pages/shop/index",
+    "pages/location/index",
   ],
   subpackages: [
     {
