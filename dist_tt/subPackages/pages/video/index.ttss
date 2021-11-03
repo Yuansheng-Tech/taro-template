@@ -1,0 +1,61 @@
+.discover-swiper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  color: #fff;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.discover-swiper .discover-video-main {
+  width: 100%;
+  height: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.discover-swiper .discover-video {
+  margin: auto 0;
+  z-index: -1;
+}
+.discover-swiper .discover-actions {
+  position: absolute;
+  right: 0;
+  top: 35%;
+}
+.discover-swiper .discover-actions .discover-action {
+  margin-top: 25rpx;
+  margin-right: 20rpx;
+  text-align: center;
+}
+.discover-swiper .discover-actions .discover-user-icon {
+  margin-bottom: 40rpx;
+}
+.discover-swiper .discover-actions .discover-action-icon {
+  width: 80rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  background-color: #555;
+  border-radius: 50%;
+}
+.discover-swiper .discover-actions .discover-action-number {
+  text-align: center;
+}
+.discover-swiper .discover-footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+.discover-swiper .discover-footer .discover-user-name {
+  padding: 20rpx 30rpx;
+}
+.discover-swiper .discover-footer .discover-desc {
+  padding: 0 30rpx 20rpx;
+}
+.discover-swiper .discover-footer .discover-play-line {
+  width: 100%;
+}
+.discover-swiper .discover-footer .discover-play-line .discover-play-progress {
+  width: 100%;
+}

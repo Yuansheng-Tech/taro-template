@@ -1,71 +1,5 @@
 export default [
   {
-    name: "YYSearchBar",
-    text: "搜索框",
-    icon: "https://file.yuanshengyoupin.com/files/search.png",
-    data: {
-      placeholder: "请输入商户或商品名称",
-      actionName: "搜索",
-      maxLength: 100,
-      value: "",
-      fixed: false,
-      disabled: false,
-      focus: false,
-      showActionButton: false,
-      inputType: "text",
-      onConfirm: function onConfirm(event) {
-        _s();
-        console.log(
-          "onConfirm event",
-          event,
-          Object(react__WEBPACK_IMPORTED_MODULE_1__["useContext"])(
-            /*#__PURE__*/ Object(
-              react__WEBPACK_IMPORTED_MODULE_1__["createContext"]
-            )(
-              new _ysyp_stores_dist_RootStore__WEBPACK_IMPORTED_MODULE_0__[
-                "RootStore"
-              ]()
-            )
-          )
-        );
-      },
-      onActionClick: function onActionClick(event) {
-        _s2();
-        console.log(
-          "onConfirm event",
-          event,
-          Object(react__WEBPACK_IMPORTED_MODULE_1__["useContext"])(
-            /*#__PURE__*/ Object(
-              react__WEBPACK_IMPORTED_MODULE_1__["createContext"]
-            )(
-              new _ysyp_stores_dist_RootStore__WEBPACK_IMPORTED_MODULE_0__[
-                "RootStore"
-              ]()
-            )
-          )
-        );
-      },
-      onChange: function onChange(value) {
-        console.log("onChange value, event", value);
-      },
-    },
-    children: [],
-  },
-  {
-    name: "YYLocation",
-    text: "定位",
-    icon: "https://file.yuanshengyoupin.com/files/shop-address1.png",
-    data: {
-      margin: "0px",
-      padding: "10px",
-      borderRadius: "none",
-      locationImage: "https://file.biji77.com/wechat/icon/location.png",
-      name: "武汉大学店",
-      url: "",
-    },
-    children: [],
-  },
-  {
     name: "YYSwiper",
     text: "轮播图",
     icon: "https://file.yuanshengyoupin.com/files/banner.png",
@@ -73,68 +7,10 @@ export default [
       vertical: false,
       items: [
         {
-          url: "https://yuanshengyoupin.com",
-          image: "https://file.yuanshengyoupin.com/files/hb10.png",
-          imageStyle: {},
-        },
-        {
-          url: "https://yuanshengyoupin.com",
-          image: "https://file.yuanshengyoupin.com/files/hb10.png",
-          imageStyle: {},
-        },
-      ],
-    },
-    children: [],
-  },
-  {
-    name: "YYGrid",
-    text: "栅格布局",
-    icon: "https://file.yuanshengyoupin.com/files/Grid.png",
-    data: {
-      mode: "square",
-      hasBorder: true,
-      columnNum: "4",
-      onClick: function onClick(item, index) {
-        console.log("item index", item, index);
-      },
-      data: [
-        {
-          image: "https://file.yuanshengyoupin.com/files/hb10.png",
-          value: "炸鸡汉堡",
-          url: "https://yuanshengyoupin.com",
-        },
-        {
-          image: "https://file.yuanshengyoupin.com/files/hb10.png",
-          value: "主食正餐",
-          url: "https://yuanshengyoupin.com",
-        },
-        {
-          image: "https://file.yuanshengyoupin.com/files/hb10.png",
-          value: "早餐粥类",
-        },
-        {
-          image: "https://file.yuanshengyoupin.com/files/hb10.png",
-          value: "蛋糕甜点",
-        },
-        {
+          url: "/pages/job/detail/1",
           image:
-            "https://img14.360buyimg.com/jdphoto/s72x72_jfs/t17251/336/1311038817/3177/72595a07/5ac44618Na1db7b09.png",
-          value: "活动尝鲜",
-        },
-        {
-          image:
-            "https://img30.360buyimg.com/jdphoto/s72x72_jfs/t5770/97/5184449507/2423/294d5f95/595c3b4dNbc6bc95d.png",
-          value: "夜宵烧烤",
-        },
-        {
-          image: "https://file.yuanshengyoupin.com/files/hb10.png",
-          value: "麻辣烫冒菜",
-          url: "https://yuanshengyoupin.com",
-        },
-        {
-          image: "https://file.yuanshengyoupin.com/files/hb10.png",
-          value: "轻食奶茶",
-          url: "https://yuanshengyoupin.com",
+            "https://file.yuanshengyoupin.com/files/%E9%BE%99%E8%A5%BF%E7%94%B5%E5%AD%901.png",
+          imageStyle: {},
         },
       ],
     },
@@ -148,90 +24,134 @@ export default [
       content: "",
       color: "#ed3f14",
       fontSize: "16px",
-      height: "5px",
-      backgroundColor: "#eee",
+      height: "1px",
+      backgroundColor: "#ddd",
       textAlign: "center",
     },
     children: [],
   },
   {
-    name: "YYContact",
-    text: "联系",
-    icon: "https://file.yuanshengyoupin.com/files/shop-banner.png",
-    data: {
-      logo: "http://localhost:3333/static/memo/wechat_footers/我的图标绿.jpg",
-      notice: "店长电话18986291021 (微信同 申请加入福利群更多优惠)",
-      phone: "17610340225",
-      telImage: "https://file.biji77.com/wechat/icon/tel.png",
-      wxImage: "https://file.biji77.com/files/wx_share.png",
-      margin: "10px",
-      borderRadius: "10px",
-    },
-    children: [],
-  },
-  {
-    name: "YYSpaceline",
-    text: "占位线",
+    name: "YYCartGood",
+    text: "单个商品",
     icon: "",
     data: {
-      content: "",
-      color: "#ed3f14",
-      fontSize: "16px",
-      height: "5px",
-      backgroundColor: "#eee",
-      textAlign: "center",
-    },
-    children: [],
-  },
-  {
-    name: "YYSubTitle",
-    text: "标题&副标题",
-    icon: "https://file.yuanshengyoupin.com/files/titleSub.png",
-    data: {
-      title: "为您优选",
-      subTitle: "",
-      more: "查看更多",
-      url: "https://yuanshengyoupin.com",
-      fontSize: "14px",
-      padding: "10px 20px 0px",
-      onClick: function onClick() {},
-    },
-    children: [],
-  },
-  {
-    name: "YYGoodsThree",
-    text: "三栏商品",
-    icon: "",
-    data: {
-      hasBorder: true,
+      image:
+        "https://file.yuanshengyoupin.com/files/%E9%BE%99%E8%A5%BF%E7%94%B5%E5%AD%90%E5%8E%823.jpg",
+      value: "龙西电子厂",
+      desc: "工厂主要生产照明设备，耳机等，空调车间，组装包装岗位，工作简单轻松，全部手工活！不用体检，普通工衣！",
+      url: "/pages/job/detail/1",
+      price: " 17-19 元/小时",
+      originalPrice: "",
       borderRadius: "0px",
-      height: "240px",
-      imageMode: "scaleToFill",
-      textAlign: "left",
-      threeType: "right",
-      onClick: function onClick(item, index) {
-        console.log("item index", item, index);
-      },
-      data: [
-        {
-          image: "https://file.yuanshengyoupin.com/files/hb10.png",
-          value: "领取中心",
-          url: "https://yuanshengyoupin.com",
-        },
-        {
-          image: "https://file.yuanshengyoupin.com/files/hb10.png",
-          value: "找折扣",
-          url: "https://yuanshengyoupin.com",
-        },
-        {
-          image: "https://file.yuanshengyoupin.com/files/hb10.png",
-          value: "领会员",
-        },
-        {
-          image: "https://file.yuanshengyoupin.com/files/hb10.png",
-          value: "领会员",
-        },
-      ],
+      imageMode: "aspectFill",
+      imageWidth: "100px",
+      imageHeight: "100%",
+      itemPadding: "5px",
+      itemMargin: "0px",
+    },
+    children: [],
+  },
+  {
+    name: "YYCartGood",
+    text: "单个商品",
+    icon: "",
+    data: {
+      image:
+        "https://file.yuanshengyoupin.com/files/%E5%B8%83%E5%90%89%E7%94%B5%E5%AD%90%E5%8E%822.png",
+      value: "布吉兆驰电子",
+      desc: "环境优美，空调车间，生产液晶电视机等产品，组装包装测试等岗位，普通工衣",
+      url: "/pages/job/detail/2",
+      price: " 18-20 元/小时",
+      originalPrice: "",
+      borderRadius: "0px",
+      imageMode: "aspectFill",
+      imageWidth: "100px",
+      imageHeight: "100%",
+      itemPadding: "5px",
+      itemMargin: "0px",
+    },
+    children: [],
+  },
+  {
+    name: "YYCartGood",
+    text: "单个商品",
+    icon: "",
+    data: {
+      image:
+        "https://file.yuanshengyoupin.com/files/%E8%91%B5%E6%B6%8C%E5%90%88%E5%8A%9B%E6%B3%B0%E7%94%B5%E5%AD%90%E5%8E%822.png",
+      value: "葵涌合力泰电子厂",
+      desc: "工厂环境优美，交通便利。主要生产手机，触摸屏，摄像头等电子元件。",
+      url: "/pages/job/detail/3",
+      price: " 5000-6000 元/月",
+      originalPrice: "",
+      borderRadius: "0px",
+      imageMode: "aspectFill",
+      imageWidth: "100px",
+      imageHeight: "100%",
+      itemPadding: "5px",
+      itemMargin: "0px",
+    },
+    children: [],
+  },
+  {
+    name: "YYCartGood",
+    text: "单个商品",
+    icon: "",
+    data: {
+      image:
+        "https://file.yuanshengyoupin.com/files/%E5%B9%B3%E6%B9%96%E9%87%91%E8%BF%9B%E7%94%B5%E5%AD%90%E5%8E%824.png",
+      value: "平湖金进电子厂",
+      desc: "主要生产饮料售卖机中的汽水泵、电动牙刷，家用电器等。普通工衣，车间可带手机。",
+      url: "/pages/job/detail/4",
+      price: " 5500-6500 元/月",
+      originalPrice: "",
+      borderRadius: "0px",
+      imageMode: "aspectFill",
+      imageWidth: "100px",
+      imageHeight: "100%",
+      itemPadding: "5px",
+      itemMargin: "0px",
+    },
+    children: [],
+  },
+  {
+    name: "YYCartGood",
+    text: "单个商品",
+    icon: "",
+    data: {
+      image: "https://file.yuanshengyoupin.com/files/11.jpg",
+      value: "龙西贝克电子",
+      desc: "工厂主要生产照明设备，耳机等，空调车间，组装包装岗位，工作简单轻松，全部手工活！不用体检，普通工衣",
+      url: "/pages/job/detail/5",
+      price: " 4500-5500 元/月",
+      originalPrice: "",
+      borderRadius: "0px",
+      imageMode: "aspectFill",
+      imageWidth: "100px",
+      imageHeight: "100%",
+      itemPadding: "5px",
+      itemMargin: "0px",
+    },
+    children: [],
+  },
+  {
+    name: "YYCartGood",
+    text: "单个商品",
+    icon: "",
+    data: {
+      image:
+        "https://file.yuanshengyoupin.com/files/%E5%9D%AA%E5%9C%B0%E8%A3%95%E5%90%8C%E5%8C%85%E8%A3%85%E5%8E%823.png",
+      value: "坪地裕同包装厂",
+      desc: "裕同集团上市公司，坪地厂区1000多人（深南电路厂边），主要生产产品：彩盒、礼品盒、说明书 、纸箱及其它印刷包装配套等高档产品。",
+      url: "/pages/job/detail/6",
+      price: " 5500-6500 元/月",
+      originalPrice: "",
+      borderRadius: "0px",
+      imageMode: "aspectFill",
+      imageWidth: "100px",
+      imageHeight: "100%",
+      itemPadding: "5px",
+      itemMargin: "0px",
     },
     children: [],
   },
@@ -240,28 +160,12 @@ export default [
     text: "占位线",
     icon: "",
     data: {
-      content: "",
-      color: "#ed3f14",
+      content: "没有更多",
+      color: "#555",
       fontSize: "16px",
-      height: "5px",
+      height: "50px",
       backgroundColor: "#eee",
       textAlign: "center",
-    },
-    children: [],
-  },
-  {
-    name: "YYTabBar",
-    text: "标签栏",
-    icon: "",
-    data: {
-      tabList: [
-        { title: "综合排序", value: "0" },
-        { title: "离我最近", value: "1" },
-        { title: "销量最高", value: "2" },
-      ],
-      onClick: function onClick(data) {
-        console.log("onClick data", data);
-      },
     },
     children: [],
   },

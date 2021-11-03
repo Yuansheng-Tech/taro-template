@@ -34,9 +34,9 @@ module.exports = {
             }
         },
         lngs: ['en', 'zh', 'jp'],
-        ns: ['waimai_user'],
+        ns: ['mengqi'],
         defaultLng: 'zh',
-        defaultNs: 'waimai_user',
+        defaultNs: 'mengqi',
         // defaultValue: '__STRING_NOT_TRANSLATED__',
         resource: {
             loadPath: 'locales/{{lng}}/{{ns}}.json',

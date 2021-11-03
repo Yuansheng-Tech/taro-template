@@ -1,7 +1,7 @@
 {
   "miniprogramRoot": "./dist",
-  "projectname": "外卖用户端",
-  "description": "",
+  "projectname": "梦企传媒",
+  "description": "mengqi",
   "appid": "wx78819e2711925219",
   "setting": {
     "urlCheck": true,

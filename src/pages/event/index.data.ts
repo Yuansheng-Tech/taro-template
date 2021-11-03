@@ -1,1 +1,0 @@
-export default `<h2 style="text-align: center">头部一行无法删除</h2><ol><li><p>选择元素 右侧出现可配置项目</p></li><li><p>最好收集所有的元素做成可配置</p></li><li><p>渲染的时候需要能生成 静态 HTML</p></li><li><p>需要研究一下 missr 或者再创造出一套新的 静态文件生成</p></li></ol><p></p><img src="https://file.biji77.com/goods/%E9%85%B8%E5%A5%B6%E8%8A%92%E6%9E%9C%E7%87%95%E9%BA%A6%E7%9B%92%E5%AD%901.jpg" alt="">`;

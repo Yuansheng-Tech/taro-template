@@ -1,10 +1,11 @@
 import React, { Component } from "react";
 import Taro from "@tarojs/taro";
+import { observer } from "mobx-react";
 import * as YYUI from "@ysyp/ui/dist/src/index";
 import { fetch } from "@ysyp/utils/dist/fetch";
 import { useRootStore } from "@base/RootStoreProvider";
 
-export default class Index extends Component<any, any> {
+class Index extends Component<any, any> {
   constructor(props) {
     super(props);
     this.state = {
@@ -13,7 +14,7 @@ export default class Index extends Component<any, any> {
   }
   onShareAppMessage(res) {
     return {
-      title: "首页",
+      title: "梦企传媒",
       path: "/pages/index/index",
     };
   }
@@ -57,3 +58,5 @@ export default class Index extends Component<any, any> {
     );
   }
 }
+
+export default observer(Index);

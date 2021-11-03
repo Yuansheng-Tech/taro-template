@@ -1,0 +1,13 @@
+{
+  "miniprogramRoot": "./",
+  "projectname": "梦企传媒",
+  "description": "梦企传媒",
+  "appid": "ttf89c8e2167a51e9201",
+  "setting": {
+    "urlCheck": true,
+    "es6": false,
+    "postcss": false,
+    "minified": false
+  },
+  "compileType": "miniprogram"
+}

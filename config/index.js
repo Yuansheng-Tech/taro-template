@@ -18,7 +18,8 @@ const config = {
     // "@ysyp/stores/dist": path.resolve(__dirname, '../../..', 'packages/stores/src'),
   },
   plugins: [
-    '@tarojs/plugin-html',
+    '@tarojs/plugin-platform-kwai',
+    // '@tarojs/plugin-html',
     // [
     //   "@tarojs/plugin-mini-ci",
     //   {
@@ -46,7 +47,7 @@ const config = {
     // ],
   ],
   defineConstants: {
-    LOCATION_APIKEY: JSON.stringify('3WHBZ-RQEC4-2O5UY-DISRN-4KQFH-5IBR6')
+    LOCATION_APIKEY: JSON.stringify('DE3BZ-ICBAJ-W2HFR-FOLA7-XSAUH-Y6FBF')
   },
   copy: {
     patterns: [
@@ -57,8 +58,8 @@ const config = {
   framework: 'react',
   mini: {
     webpackChain (chain, webpack) {
-      chain.plugin('analyzer')
-        .use(require('webpack-bundle-analyzer').BundleAnalyzerPlugin, []);
+      // chain.plugin('analyzer')
+      //   .use(require('webpack-bundle-analyzer').BundleAnalyzerPlugin, []);
       
       chain.merge({
         optimization: {

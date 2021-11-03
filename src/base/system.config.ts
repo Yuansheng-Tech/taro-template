@@ -1,8 +1,8 @@
 export default {
-  baseColor: { $mainColor: " #006e46", $redColor: "#e60000", $bgGray: "#eee" },
+  baseColor: { $mainColor: "#1296db", $redColor: "#e60000", $bgGray: "#eee" },
   SysConfig: {
-    appName: "外卖用户端",
-    slogen: "",
-    weappId: "8e6ece63-5d3e-465b-9b2a-37108848e8e9",
+    appName: "梦企传媒",
+    slogen: "mengqi",
+    weappId: "25cfbf8b-a7a6-4215-89a9-0343cff14273",
   },
 };

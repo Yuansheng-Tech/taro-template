@@ -12,6 +12,9 @@ switch(process.env.TARO_ENV){
   case 'tt':
     outputRoot= 'build_tt'
     break
+  case 'kwai':
+    outputRoot= 'build_kwai'
+    break
   case 'rn':
     outputRoot= 'build_rn'
     break

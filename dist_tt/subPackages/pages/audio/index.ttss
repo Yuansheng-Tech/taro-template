@@ -1,0 +1,121 @@
+@charset "UTF-8";
+.discover-swiper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  color: #fff;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  /* customize_components/co-audio/co-audio.wxss */
+  /*声音海报*/
+  /*声音描述*/
+  /*播放器*/
+}
+.discover-swiper .discover-audio-main {
+  width: 100%;
+  height: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.discover-swiper .discover-audio {
+  width: 100%;
+  margin-top: auto;
+  margin-bottom: 180rpx;
+  z-index: -1;
+}
+.discover-swiper .discover-actions {
+  position: absolute;
+  right: 0;
+  top: 25%;
+}
+.discover-swiper .discover-actions .discover-action {
+  margin-top: 25rpx;
+  margin-right: 20rpx;
+  text-align: center;
+}
+.discover-swiper .discover-actions .discover-user-icon {
+  margin-bottom: 40rpx;
+}
+.discover-swiper .discover-actions .discover-action-icon {
+  width: 80rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  background-color: #555;
+  border-radius: 50%;
+}
+.discover-swiper .discover-actions .discover-action-number {
+  text-align: center;
+}
+.discover-swiper .discover-footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+.discover-swiper .discover-footer .discover-user-name {
+  padding: 20rpx 30rpx;
+}
+.discover-swiper .discover-footer .discover-desc {
+  padding: 0 30rpx 20rpx;
+}
+.discover-swiper .discover-footer .discover-play-line {
+  width: 100%;
+}
+.discover-swiper .discover-footer .discover-play-line .discover-play-progress {
+  width: 100%;
+}
+.discover-swiper .co-audio-wrap .poster-wrap {
+  text-align: center;
+  margin-bottom: 10rpx;
+}
+.discover-swiper .co-audio-wrap .poster {
+  width: 65%;
+}
+.discover-swiper .text-wrap {
+  text-align: center;
+  margin-bottom: 40rpx;
+}
+.discover-swiper .audio-name {
+  font-size: 34rpx;
+  color: #333;
+}
+.discover-swiper .audio-author {
+  font-size: 26rpx;
+  color: #ddd;
+}
+.discover-swiper .player {
+  width: 92%;
+  border: 1rpx solid #eee;
+  margin: 0 auto;
+  border-radius: 50rpx;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10rpx 14rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 10rpx;
+  background: #fcfcfc;
+}
+.discover-swiper .player image {
+  width: 60rpx;
+  height: 60rpx;
+}
+.discover-swiper .player .slider {
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.discover-swiper .player .time {
+  width: 25%;
+  font-size: 22rpx;
+  color: #666;
+}
