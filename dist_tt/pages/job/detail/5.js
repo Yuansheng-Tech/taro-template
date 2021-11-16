@@ -24,8 +24,7 @@
 /* harmony import */ var mobx_react__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! mobx-react */ "./node_modules/mobx-react/dist/mobxreact.esm.js");
 /* harmony import */ var _ysyp_ui_dist_src_index__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @ysyp/ui/dist/src/index */ "./node_modules/@ysyp/ui/dist/src/index.js");
 /* harmony import */ var _ysyp_ui_dist_src_index__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_ysyp_ui_dist_src_index__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var _ysyp_utils_dist_fetch__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @ysyp/utils/dist/fetch */ "./node_modules/@ysyp/utils/dist/fetch.js");
-/* harmony import */ var _ysyp_utils_dist_fetch__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_ysyp_utils_dist_fetch__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _ysyp_utils_dist_fetch__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @ysyp/utils/dist/fetch */ "../utils/src/fetch.tsx");
 /* harmony import */ var _base_RootStoreProvider__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @base/RootStoreProvider */ "./src/base/RootStoreProvider.tsx");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/cjs/react-jsx-runtime.production.min.js");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__);

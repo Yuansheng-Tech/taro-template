@@ -11,19 +11,19 @@ class Index extends Component<any, any> {
   constructor(props) {
     super(props);
     this.state = {
-      data: [],
+      data: "",
     };
   }
   onShareAppMessage(res) {
     return {
       title: "帮助文档",
-      path: "undefined",
+      path: "/pages/help/index",
     };
   }
   async componentWillMount() {
-    const data = (await this.getData("undefined")) || {};
+    const data = (await this.getData("/pages/help/index")) || {};
     this.setState({
-      data: !data[0] ? [] : JSON.parse(data[0].data || "[]"),
+      data: !data[0] ? "" : data[0].data || "",
     });
   }
   async getData(path) {

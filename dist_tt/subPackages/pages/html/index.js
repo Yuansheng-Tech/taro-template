@@ -21,8 +21,7 @@
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var _tarojs_taro__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @tarojs/taro */ "./node_modules/@tarojs/taro/index.js");
 /* harmony import */ var _tarojs_taro__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_tarojs_taro__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _ysyp_utils_dist_fetch__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @ysyp/utils/dist/fetch */ "./node_modules/@ysyp/utils/dist/fetch.js");
-/* harmony import */ var _ysyp_utils_dist_fetch__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_ysyp_utils_dist_fetch__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _ysyp_utils_dist_fetch__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @ysyp/utils/dist/fetch */ "../utils/src/fetch.tsx");
 /* harmony import */ var _tarojs_components__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @tarojs/components */ "./node_modules/@tarojs/components/mini/index.js");
 /* harmony import */ var _base_richtext_richtext_format__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @base/richtext/richtext-format */ "./src/base/richtext/richtext-format.ts");
 /* harmony import */ var _base_richtext_richtext_scss__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @base/richtext/richtext.scss */ "./src/base/richtext/richtext.scss");

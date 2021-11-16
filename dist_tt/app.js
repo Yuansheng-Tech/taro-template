@@ -27,6 +27,7 @@ require("./taro");
 
 
 function App(props) {
+  // Taro.setStorageSync('API_URL', 'http://api.yuansheng.com/api')
   _tarojs_taro__WEBPACK_IMPORTED_MODULE_0___default.a.setStorageSync('API_URL', 'https://api.yuanshengyoupin.com/api'); // Taro.setStorageSync('API_URL', 'http://localhost:3333/api')
 
   _tarojs_taro__WEBPACK_IMPORTED_MODULE_0___default.a.setStorageSync('APIKey', 'jdpaSAz4m7yV3zXXwx85ashEUycAL5gCrxO6');

@@ -1,47 +1,9 @@
 import React, { Component } from "react";
-import Taro from "@tarojs/taro";
-import { observer } from "mobx-react";
 import * as YYUI from "@ysyp/ui/dist/src/index";
-import { fetch } from "@ysyp/utils/dist/fetch";
-import { useRootStore } from "@base/RootStoreProvider";
+import data from "./1.data";
 
-class Index extends Component<any, any> {
-  constructor(props) {
-    super(props);
-    this.state = {
-      data: [],
-    };
-  }
-  onShareAppMessage(res) {
-    return {
-      title: "龙西电子厂",
-      path: "/pages/job/detail/1",
-    };
-  }
-  async componentWillMount() {
-    const data = (await this.getData("/pages/job/detail/1")) || {};
-    this.setState({
-      data: !data[0] ? [] : JSON.parse(data[0].data || "[]"),
-    });
-  }
-  async getData(path) {
-    const { data } =
-      (await fetch({
-        url: "/wechat/pages",
-        method: "GET",
-        data: {
-          where: {
-            path,
-            wechat: {
-              id: Taro.getStorageSync("wechatId"),
-            },
-          },
-        },
-      })) || {};
-    return data;
-  }
+export default class Index extends Component {
   render() {
-    const { data } = this.state;
     return (
       <>
         {data.map((v) => {
@@ -49,7 +11,6 @@ class Index extends Component<any, any> {
             YYUI[v.name],
             {
               ...v.data,
-              useRootStore,
             },
             null
           );
@@ -58,5 +19,3 @@ class Index extends Component<any, any> {
     );
   }
 }
-
-export default observer(Index);

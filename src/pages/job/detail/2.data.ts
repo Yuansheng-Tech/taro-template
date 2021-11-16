@@ -59,6 +59,37 @@ export default [
     children: [],
   },
   {
+    name: "YYContact",
+    text: "联系",
+    icon: "https://file.yuanshengyoupin.com/files/shop-banner.png",
+    data: {
+      logo: "https://file.yuanshengyoupin.com/files/%E5%A5%B3%E5%AE%A2%E6%9C%8D.png",
+      notice: "梦企传媒 - 正能量招聘咨询",
+      phone: "13257681336",
+      wechat: "LW981198",
+      telImage:
+        "https://file.yuanshengyoupin.com/files/209%E7%94%B5%E8%AF%9D-%E7%BA%BF%E6%80%A7%E5%9C%86%E6%A1%86.png",
+      wxImage: "https://file.yuanshengyoupin.com/files/%E5%BE%AE%E4%BF%A1.png",
+      margin: "10px",
+      borderRadius: "10px",
+    },
+    children: [],
+  },
+  {
+    name: "YYSpaceline",
+    text: "占位线",
+    icon: "",
+    data: {
+      content: "",
+      color: "#ed3f14",
+      fontSize: "16px",
+      height: "1px",
+      backgroundColor: "#eee",
+      textAlign: "center",
+    },
+    children: [],
+  },
+  {
     name: "YYTitle",
     text: "标题",
     icon: "https://file.yuanshengyoupin.com/files/titleSub.png",

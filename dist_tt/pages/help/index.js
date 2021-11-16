@@ -9,20 +9,29 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Index; });
-/* harmony import */ var _Users_x_yuansheng_editor_packages_template_node_modules_babel_preset_taro_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/babel-preset-taro/node_modules/@babel/runtime/helpers/esm/classCallCheck */ "./node_modules/babel-preset-taro/node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
-/* harmony import */ var _Users_x_yuansheng_editor_packages_template_node_modules_babel_preset_taro_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/babel-preset-taro/node_modules/@babel/runtime/helpers/esm/createClass */ "./node_modules/babel-preset-taro/node_modules/@babel/runtime/helpers/esm/createClass.js");
-/* harmony import */ var _Users_x_yuansheng_editor_packages_template_node_modules_babel_preset_taro_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/babel-preset-taro/node_modules/@babel/runtime/helpers/esm/inherits */ "./node_modules/babel-preset-taro/node_modules/@babel/runtime/helpers/esm/inherits.js");
-/* harmony import */ var _Users_x_yuansheng_editor_packages_template_node_modules_babel_preset_taro_node_modules_babel_runtime_helpers_esm_createSuper__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/babel-preset-taro/node_modules/@babel/runtime/helpers/esm/createSuper */ "./node_modules/babel-preset-taro/node_modules/@babel/runtime/helpers/esm/createSuper.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react */ "./node_modules/react/cjs/react.production.min.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _tarojs_components__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @tarojs/components */ "./node_modules/@tarojs/components/mini/index.js");
-/* harmony import */ var _base_richtext_richtext_format__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @base/richtext/richtext-format */ "./src/base/richtext/richtext-format.ts");
-/* harmony import */ var _index_data__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./index.data */ "./src/pages/help/index.data.ts");
-/* harmony import */ var _base_richtext_richtext_scss__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @base/richtext/richtext.scss */ "./src/base/richtext/richtext.scss");
-/* harmony import */ var _base_richtext_richtext_scss__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_base_richtext_richtext_scss__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/cjs/react-jsx-runtime.production.min.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _Users_x_yuansheng_editor_packages_template_node_modules_babel_preset_taro_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/babel-preset-taro/node_modules/@babel/runtime/regenerator */ "./node_modules/babel-preset-taro/node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _Users_x_yuansheng_editor_packages_template_node_modules_babel_preset_taro_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_Users_x_yuansheng_editor_packages_template_node_modules_babel_preset_taro_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Users_x_yuansheng_editor_packages_template_node_modules_babel_preset_taro_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/babel-preset-taro/node_modules/@babel/runtime/helpers/esm/asyncToGenerator */ "./node_modules/babel-preset-taro/node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js");
+/* harmony import */ var _Users_x_yuansheng_editor_packages_template_node_modules_babel_preset_taro_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/babel-preset-taro/node_modules/@babel/runtime/helpers/esm/classCallCheck */ "./node_modules/babel-preset-taro/node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var _Users_x_yuansheng_editor_packages_template_node_modules_babel_preset_taro_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/babel-preset-taro/node_modules/@babel/runtime/helpers/esm/createClass */ "./node_modules/babel-preset-taro/node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var _Users_x_yuansheng_editor_packages_template_node_modules_babel_preset_taro_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./node_modules/babel-preset-taro/node_modules/@babel/runtime/helpers/esm/inherits */ "./node_modules/babel-preset-taro/node_modules/@babel/runtime/helpers/esm/inherits.js");
+/* harmony import */ var _Users_x_yuansheng_editor_packages_template_node_modules_babel_preset_taro_node_modules_babel_runtime_helpers_esm_createSuper__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./node_modules/babel-preset-taro/node_modules/@babel/runtime/helpers/esm/createSuper */ "./node_modules/babel-preset-taro/node_modules/@babel/runtime/helpers/esm/createSuper.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react */ "./node_modules/react/cjs/react.production.min.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _tarojs_taro__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @tarojs/taro */ "./node_modules/@tarojs/taro/index.js");
+/* harmony import */ var _tarojs_taro__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_tarojs_taro__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _tarojs_components__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @tarojs/components */ "./node_modules/@tarojs/components/mini/index.js");
+/* harmony import */ var mobx_react__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! mobx-react */ "./node_modules/mobx-react/dist/mobxreact.esm.js");
+/* harmony import */ var _base_richtext_richtext_format__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @base/richtext/richtext-format */ "./src/base/richtext/richtext-format.ts");
+/* harmony import */ var _ysyp_utils_dist_fetch__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @ysyp/utils/dist/fetch */ "../utils/src/fetch.tsx");
+/* harmony import */ var _base_richtext_richtext_scss__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @base/richtext/richtext.scss */ "./src/base/richtext/richtext.scss");
+/* harmony import */ var _base_richtext_richtext_scss__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_base_richtext_richtext_scss__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/cjs/react-jsx-runtime.production.min.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__);
+
+
+
+
 
 
 
@@ -35,45 +44,142 @@
 
 
 var Index = /*#__PURE__*/function (_Component) {
-  Object(_Users_x_yuansheng_editor_packages_template_node_modules_babel_preset_taro_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])(Index, _Component);
+  Object(_Users_x_yuansheng_editor_packages_template_node_modules_babel_preset_taro_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"])(Index, _Component);
 
-  var _super = Object(_Users_x_yuansheng_editor_packages_template_node_modules_babel_preset_taro_node_modules_babel_runtime_helpers_esm_createSuper__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"])(Index);
+  var _super = Object(_Users_x_yuansheng_editor_packages_template_node_modules_babel_preset_taro_node_modules_babel_runtime_helpers_esm_createSuper__WEBPACK_IMPORTED_MODULE_5__[/* default */ "a"])(Index);
 
-  function Index() {
-    Object(_Users_x_yuansheng_editor_packages_template_node_modules_babel_preset_taro_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(this, Index);
+  function Index(props) {
+    var _this;
 
-    return _super.apply(this, arguments);
+    Object(_Users_x_yuansheng_editor_packages_template_node_modules_babel_preset_taro_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])(this, Index);
+
+    _this = _super.call(this, props);
+    _this.state = {
+      data: ""
+    };
+    return _this;
   }
 
-  Object(_Users_x_yuansheng_editor_packages_template_node_modules_babel_preset_taro_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])(Index, [{
+  Object(_Users_x_yuansheng_editor_packages_template_node_modules_babel_preset_taro_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"])(Index, [{
+    key: "onShareAppMessage",
+    value: function onShareAppMessage(res) {
+      return {
+        title: "帮助文档",
+        path: "/pages/help/index"
+      };
+    }
+  }, {
+    key: "componentWillMount",
+    value: function () {
+      var _componentWillMount = Object(_Users_x_yuansheng_editor_packages_template_node_modules_babel_preset_taro_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])( /*#__PURE__*/_Users_x_yuansheng_editor_packages_template_node_modules_babel_preset_taro_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
+        var data;
+        return _Users_x_yuansheng_editor_packages_template_node_modules_babel_preset_taro_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                _context.next = 2;
+                return this.getData("/pages/help/index");
+
+              case 2:
+                _context.t0 = _context.sent;
+
+                if (_context.t0) {
+                  _context.next = 5;
+                  break;
+                }
+
+                _context.t0 = {};
+
+              case 5:
+                data = _context.t0;
+                this.setState({
+                  data: !data[0] ? "" : data[0].data || ""
+                });
+
+              case 7:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee, this);
+      }));
+
+      function componentWillMount() {
+        return _componentWillMount.apply(this, arguments);
+      }
+
+      return componentWillMount;
+    }()
+  }, {
+    key: "getData",
+    value: function () {
+      var _getData = Object(_Users_x_yuansheng_editor_packages_template_node_modules_babel_preset_taro_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])( /*#__PURE__*/_Users_x_yuansheng_editor_packages_template_node_modules_babel_preset_taro_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee2(path) {
+        var _ref, data;
+
+        return _Users_x_yuansheng_editor_packages_template_node_modules_babel_preset_taro_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee2$(_context2) {
+          while (1) {
+            switch (_context2.prev = _context2.next) {
+              case 0:
+                _context2.next = 2;
+                return Object(_ysyp_utils_dist_fetch__WEBPACK_IMPORTED_MODULE_11__["fetch"])({
+                  url: "/wechat/pages",
+                  method: "GET",
+                  data: {
+                    where: {
+                      path: path,
+                      wechat: {
+                        id: _tarojs_taro__WEBPACK_IMPORTED_MODULE_7___default.a.getStorageSync("wechatId")
+                      }
+                    }
+                  }
+                });
+
+              case 2:
+                _context2.t0 = _context2.sent;
+
+                if (_context2.t0) {
+                  _context2.next = 5;
+                  break;
+                }
+
+                _context2.t0 = {};
+
+              case 5:
+                _ref = _context2.t0;
+                data = _ref.data;
+                return _context2.abrupt("return", data);
+
+              case 8:
+              case "end":
+                return _context2.stop();
+            }
+          }
+        }, _callee2);
+      }));
+
+      function getData(_x) {
+        return _getData.apply(this, arguments);
+      }
+
+      return getData;
+    }()
+  }, {
     key: "render",
     value: function render() {
-      return /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__["jsx"])(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__["View"], {
+      var data = this.state.data;
+      return /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__["jsx"])(_tarojs_components__WEBPACK_IMPORTED_MODULE_8__["View"], {
         className: "rich-text",
-        children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__["jsx"])(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__["RichText"], {
-          nodes: Object(_base_richtext_richtext_format__WEBPACK_IMPORTED_MODULE_6__[/* addClassAndStyle */ "a"])(_index_data__WEBPACK_IMPORTED_MODULE_7__[/* default */ "a"])
+        children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_13__["jsx"])(_tarojs_components__WEBPACK_IMPORTED_MODULE_8__["RichText"], {
+          nodes: Object(_base_richtext_richtext_format__WEBPACK_IMPORTED_MODULE_10__[/* addClassAndStyle */ "a"])(data)
         })
       });
     }
   }]);
 
   return Index;
-}(react__WEBPACK_IMPORTED_MODULE_4__["Component"]);
+}(react__WEBPACK_IMPORTED_MODULE_6__["Component"]);
 
-
-
-/***/ }),
-
-/***/ "./src/pages/help/index.data.ts":
-/*!**************************************!*\
-  !*** ./src/pages/help/index.data.ts ***!
-  \**************************************/
-/*! exports provided: default */
-/*! exports used: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony default export */ __webpack_exports__["a"] = ("<h3>1. \u5173\u4E8E\u68A6\u4F01\u76F4\u8058</h3><p>\u68A6\u4F01\u4F20\u5A92\u6709\u9650\u516C\u53F8\u662F\u4E00\u5BB6\u4E13\u4E1A\u7684\u4EBA\u529B\u8D44\u6E90\u670D\u52A1\u516C\u53F8\uFF0C\u4E13\u4E1A\u8FD0\u7528\u81EA\u5A92\u4F53\u6A21\u5F0F\uFF0C\u4EE5\u77ED\u89C6\u9891\u884C\u5F0F\uFF0C\u8BB0\u5F55\u5DE5\u5382\u8863\u98DF\u4F4F\u884C\uFF0C\u4E13\u4E1A\u670D\u52A1\u5404\u81EA\u6765\u4E94\u6E56\u56DB\u6D77\u4E00\u7EBF\u666E\u5DE5\uFF0C\u4EE5\u6708\u7ED3\uFF0C\u5468\u7ED3\u4E3A\u4E3B\uFF0C\u8BA9\u5404\u6C42\u804C\u8005\u5C11\u8D70\u5F2F\u8DEF\uFF0C\u770B\u77ED\u89C6\u9891\u627E\u6EE1\u610F\u5DE5\u4F5C\uFF0C\u6765\u4E86\u5C31\u662F\u6DF1\u5733\u4EBA\uFF0C\u6B22\u8FCE\u60A8\uFF01</p><img src=\"https://file.yuanshengyoupin.com/files/WechatIMG213.jpeg\" alt=\"0\"><p></p><h3>2. \u5982\u4F55\u7533\u8BF7\u5C97\u4F4D</h3><ol><li><p>\u8BBF\u95EE\u8BE5\u5C0F\u7A0B\u5E8F\uFF1B</p></li><li><p>\u70B9\u51FB\u9996\u9875\u5217\u8868\u67D0\u4E2A\u804C\u4F4D\uFF1B</p></li><li><p>\u804C\u4F4D\u8BE6\u60C5\u9875\u70B9\u51FB \u201C\u7ACB\u5373\u62A5\u540D\u201D\uFF1B</p></li><li><p>\u5728\u804C\u4F4D\u7533\u8BF7\u9875\u9762\uFF0C\u586B\u5199\u60A8\u7684\u59D3\u540D\u3001\u624B\u673A\u53F7\uFF1B</p></li><li><p>\u70B9\u51FB\u63D0\u4EA4\uFF1B</p><p>\u5373\u53EF\u7533\u8BF7\u8BE5\u804C\u4F4D\uFF01</p><img src=\"https://file.yuanshengyoupin.com/files/apply.jpg\" alt=\"0\"></li></ol><p></p><h3>3. \u5982\u4F55\u548C\u6211\u4EEC\u53D6\u5F97\u8054\u7CFB</h3><p>\u63D0\u4EA4\u201C\u804C\u4F4D\u7533\u8BF7\u201D\u4E4B\u540E\uFF0C\u6211\u4EEC\u4F1A\u5C3D\u5FEB\u901A\u8FC7\u624B\u673A\u53F7\u4E0E\u60A8\u8054\u7CFB\uFF01</p><p></p>");
+/* harmony default export */ __webpack_exports__["a"] = (Object(mobx_react__WEBPACK_IMPORTED_MODULE_9__[/* observer */ "a"])(Index));
 
 /***/ }),
 

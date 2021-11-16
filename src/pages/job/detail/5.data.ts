@@ -16,6 +16,20 @@ export default [
     children: [],
   },
   {
+    name: "YYSpaceline",
+    text: "占位线",
+    icon: "",
+    data: {
+      content: "",
+      color: "#ed3f14",
+      fontSize: "16px",
+      height: "1px",
+      backgroundColor: "#eee",
+      textAlign: "center",
+    },
+    children: [],
+  },
+  {
     name: "YYCartGood",
     text: "单个商品",
     icon: "",

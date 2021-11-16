@@ -515,6 +515,521 @@ module.exports.default = module.exports;
 
 /***/ }),
 
+/***/ "../utils/node_modules/@tarojs/api/dist/index.esm.js":
+/*!***********************************************************!*\
+  !*** ../utils/node_modules/@tarojs/api/dist/index.esm.js ***!
+  \***********************************************************/
+/*! exports provided: default */
+/*! all exports used */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function(global, window) {/* harmony import */ var _babel_runtime_helpers_typeof__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/typeof */ "../utils/node_modules/@babel/runtime/helpers/typeof.js");
+/* harmony import */ var _babel_runtime_helpers_typeof__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_typeof__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _babel_runtime_helpers_objectSpread2__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/objectSpread2 */ "../utils/node_modules/@babel/runtime/helpers/objectSpread2.js");
+/* harmony import */ var _babel_runtime_helpers_objectSpread2__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_objectSpread2__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ "../utils/node_modules/@babel/runtime/helpers/classCallCheck.js");
+/* harmony import */ var _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/createClass */ "../utils/node_modules/@babel/runtime/helpers/createClass.js");
+/* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/defineProperty */ "../utils/node_modules/@babel/runtime/helpers/defineProperty.js");
+/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _tarojs_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @tarojs/runtime */ "./node_modules/@tarojs/mini-runner/node_modules/@tarojs/runtime/dist/runtime.esm.js");
+
+
+
+
+
+
+
+if (typeof Object.assign !== 'function') {
+  // Must be writable: true, enumerable: false, configurable: true
+  Object.assign = function (target) {
+    // .length of function is 2
+    if (target == null) {
+      // TypeError if undefined or null
+      throw new TypeError('Cannot convert undefined or null to object');
+    }
+
+    var to = Object(target);
+
+    for (var index = 1; index < arguments.length; index++) {
+      var nextSource = arguments[index];
+
+      if (nextSource != null) {
+        // Skip over if undefined or null
+        for (var nextKey in nextSource) {
+          // Avoid bugs when hasOwnProperty is shadowed
+          if (Object.prototype.hasOwnProperty.call(nextSource, nextKey)) {
+            to[nextKey] = nextSource[nextKey];
+          }
+        }
+      }
+    }
+
+    return to;
+  };
+}
+
+if (typeof Object.defineProperties !== 'function') {
+  Object.defineProperties = function (obj, properties) {
+    function convertToDescriptor(desc) {
+      function hasProperty(obj, prop) {
+        return Object.prototype.hasOwnProperty.call(obj, prop);
+      }
+
+      function isCallable(v) {
+        // NB: modify as necessary if other values than functions are callable.
+        return typeof v === 'function';
+      }
+
+      if (_babel_runtime_helpers_typeof__WEBPACK_IMPORTED_MODULE_0___default()(desc) !== 'object' || desc === null) {
+        throw new TypeError('bad desc');
+      }
+
+      var d = {};
+      if (hasProperty(desc, 'enumerable')) d.enumerable = !!desc.enumerable;
+
+      if (hasProperty(desc, 'configurable')) {
+        d.configurable = !!desc.configurable;
+      }
+
+      if (hasProperty(desc, 'value')) d.value = desc.value;
+      if (hasProperty(desc, 'writable')) d.writable = !!desc.writable;
+
+      if (hasProperty(desc, 'get')) {
+        var g = desc.get;
+
+        if (!isCallable(g) && typeof g !== 'undefined') {
+          throw new TypeError('bad get');
+        }
+
+        d.get = g;
+      }
+
+      if (hasProperty(desc, 'set')) {
+        var s = desc.set;
+
+        if (!isCallable(s) && typeof s !== 'undefined') {
+          throw new TypeError('bad set');
+        }
+
+        d.set = s;
+      }
+
+      if (('get' in d || 'set' in d) && ('value' in d || 'writable' in d)) {
+        throw new TypeError('identity-confused descriptor');
+      }
+
+      return d;
+    }
+
+    if (_babel_runtime_helpers_typeof__WEBPACK_IMPORTED_MODULE_0___default()(obj) !== 'object' || obj === null) throw new TypeError('bad obj');
+    properties = Object(properties);
+    var keys = Object.keys(properties);
+    var descs = [];
+
+    for (var i = 0; i < keys.length; i++) {
+      descs.push([keys[i], convertToDescriptor(properties[keys[i]])]);
+    }
+
+    for (var _i = 0; _i < descs.length; _i++) {
+      Object.defineProperty(obj, descs[_i][0], descs[_i][1]);
+    }
+
+    return obj;
+  };
+}
+
+var ENV_TYPE = {
+  WEAPP: 'WEAPP',
+  WEB: 'WEB',
+  RN: 'RN',
+  SWAN: 'SWAN',
+  ALIPAY: 'ALIPAY',
+  TT: 'TT',
+  QQ: 'QQ',
+  JD: 'JD'
+};
+var _env = null; // 一个taro项目肯定运行同样的环境
+
+function getEnv() {
+  if (_env) return _env;
+
+  if (typeof jd !== 'undefined' && jd.getSystemInfo) {
+    _env = ENV_TYPE.JD;
+    return ENV_TYPE.JD;
+  }
+
+  if (typeof qq !== 'undefined' && qq.getSystemInfo) {
+    _env = ENV_TYPE.QQ;
+    return ENV_TYPE.QQ;
+  }
+
+  if (typeof tt !== 'undefined' && tt.getSystemInfo) {
+    _env = ENV_TYPE.TT;
+    return ENV_TYPE.TT;
+  }
+
+  if (typeof wx !== 'undefined' && wx.getSystemInfo) {
+    _env = ENV_TYPE.WEAPP;
+    return ENV_TYPE.WEAPP;
+  }
+
+  if (typeof swan !== 'undefined' && swan.getSystemInfo) {
+    _env = ENV_TYPE.SWAN;
+    return ENV_TYPE.SWAN;
+  }
+
+  if (typeof my !== 'undefined' && my.getSystemInfo) {
+    _env = ENV_TYPE.ALIPAY;
+    return ENV_TYPE.ALIPAY;
+  }
+
+  if (typeof global !== 'undefined' && global.__fbGenNativeModule) {
+    _env = ENV_TYPE.RN;
+    return ENV_TYPE.RN;
+  }
+
+  if (typeof window !== 'undefined') {
+    _env = ENV_TYPE.WEB;
+    return ENV_TYPE.WEB;
+  }
+
+  return 'Unknown environment';
+}
+
+var Chain = /*#__PURE__*/function () {
+  function Chain(requestParams) {
+    var interceptors = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : [];
+    var index = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 0;
+
+    _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_2___default()(this, Chain);
+
+    this.index = index;
+    this.requestParams = requestParams;
+    this.interceptors = interceptors;
+  }
+
+  _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_3___default()(Chain, [{
+    key: "proceed",
+    value: function proceed(requestParams) {
+      this.requestParams = requestParams;
+
+      if (this.index >= this.interceptors.length) {
+        throw new Error('chain 参数错误, 请勿直接修改 request.chain');
+      }
+
+      var nextInterceptor = this._getNextInterceptor();
+
+      var nextChain = this._getNextChain();
+
+      var p = nextInterceptor(nextChain);
+      var res = p.catch(function (err) {
+        return Promise.reject(err);
+      });
+      if (typeof p.abort === 'function') res.abort = p.abort;
+      return res;
+    }
+  }, {
+    key: "_getNextInterceptor",
+    value: function _getNextInterceptor() {
+      return this.interceptors[this.index];
+    }
+  }, {
+    key: "_getNextChain",
+    value: function _getNextChain() {
+      return new Chain(this.requestParams, this.interceptors, this.index + 1);
+    }
+  }]);
+
+  return Chain;
+}();
+
+var Link = /*#__PURE__*/function () {
+  function Link(interceptor) {
+    _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_2___default()(this, Link);
+
+    this.taroInterceptor = interceptor;
+    this.chain = new Chain();
+  }
+
+  _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_3___default()(Link, [{
+    key: "request",
+    value: function request(requestParams) {
+      var _this = this;
+
+      this.chain.interceptors = this.chain.interceptors.filter(function (interceptor) {
+        return interceptor !== _this.taroInterceptor;
+      });
+      this.chain.interceptors.push(this.taroInterceptor);
+      return this.chain.proceed(_babel_runtime_helpers_objectSpread2__WEBPACK_IMPORTED_MODULE_1___default()({}, requestParams));
+    }
+  }, {
+    key: "addInterceptor",
+    value: function addInterceptor(interceptor) {
+      this.chain.interceptors.push(interceptor);
+    }
+  }, {
+    key: "cleanInterceptors",
+    value: function cleanInterceptors() {
+      this.chain = new Chain();
+    }
+  }]);
+
+  return Link;
+}();
+
+function timeoutInterceptor(chain) {
+  var requestParams = chain.requestParams;
+  var p;
+  var res = new Promise(function (resolve, reject) {
+    var timeout = setTimeout(function () {
+      timeout = null;
+      reject(new Error('网络链接超时,请稍后再试！'));
+    }, requestParams && requestParams.timeout || 60000);
+    p = chain.proceed(requestParams);
+    p.then(function (res) {
+      if (!timeout) return;
+      clearTimeout(timeout);
+      resolve(res);
+    }).catch(function (err) {
+      timeout && clearTimeout(timeout);
+      reject(err);
+    });
+  });
+  if (p !== undefined && typeof p.abort === 'function') res.abort = p.abort;
+  return res;
+}
+
+function logInterceptor(chain) {
+  var requestParams = chain.requestParams;
+  var method = requestParams.method,
+      data = requestParams.data,
+      url = requestParams.url; // eslint-disable-next-line no-console
+
+  console.log("http ".concat(method || 'GET', " --> ").concat(url, " data: "), data);
+  var p = chain.proceed(requestParams);
+  var res = p.then(function (res) {
+    // eslint-disable-next-line no-console
+    console.log("http <-- ".concat(url, " result:"), res);
+    return res;
+  });
+  if (typeof p.abort === 'function') res.abort = p.abort;
+  return res;
+}
+
+var interceptors = /*#__PURE__*/Object.freeze({
+  __proto__: null,
+  timeoutInterceptor: timeoutInterceptor,
+  logInterceptor: logInterceptor
+});
+
+function Behavior(options) {
+  return options;
+}
+
+function getPreload(current) {
+  return function (key, val) {
+    if (_babel_runtime_helpers_typeof__WEBPACK_IMPORTED_MODULE_0___default()(key) === 'object') {
+      current.preloadData = key;
+    } else if (key !== undefined && val !== undefined) {
+      current.preloadData = _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_4___default()({}, key, val);
+    }
+  };
+}
+
+function getInitPxTransform(taro) {
+  return function (config) {
+    var _config$designWidth = config.designWidth,
+        designWidth = _config$designWidth === void 0 ? 750 : _config$designWidth,
+        _config$deviceRatio = config.deviceRatio,
+        deviceRatio = _config$deviceRatio === void 0 ? {
+      640: 2.34 / 2,
+      750: 1,
+      828: 1.81 / 2
+    } : _config$deviceRatio;
+    taro.config = taro.config || {};
+    taro.config.designWidth = designWidth;
+    taro.config.deviceRatio = deviceRatio;
+  };
+}
+
+function getPxTransform(taro) {
+  return function (size) {
+    var _ref = taro.config || {},
+        _ref$designWidth = _ref.designWidth,
+        designWidth = _ref$designWidth === void 0 ? 750 : _ref$designWidth,
+        _ref$deviceRatio = _ref.deviceRatio,
+        deviceRatio = _ref$deviceRatio === void 0 ? {
+      640: 2.34 / 2,
+      750: 1,
+      828: 1.81 / 2
+    } : _ref$deviceRatio;
+
+    if (!(designWidth in deviceRatio)) {
+      throw new Error("deviceRatio \u914D\u7F6E\u4E2D\u4E0D\u5B58\u5728 ".concat(designWidth, " \u7684\u8BBE\u7F6E\uFF01"));
+    }
+
+    return parseInt(size, 10) * deviceRatio[designWidth] + 'rpx';
+  };
+}
+/* eslint-disable camelcase */
+
+
+var Taro = {
+  Behavior: Behavior,
+  getEnv: getEnv,
+  ENV_TYPE: ENV_TYPE,
+  Link: Link,
+  interceptors: interceptors,
+  Current: _tarojs_runtime__WEBPACK_IMPORTED_MODULE_5__["Current"],
+  getCurrentInstance: _tarojs_runtime__WEBPACK_IMPORTED_MODULE_5__["getCurrentInstance"],
+  options: _tarojs_runtime__WEBPACK_IMPORTED_MODULE_5__["options"],
+  nextTick: _tarojs_runtime__WEBPACK_IMPORTED_MODULE_5__["nextTick"],
+  eventCenter: _tarojs_runtime__WEBPACK_IMPORTED_MODULE_5__["eventCenter"],
+  Events: _tarojs_runtime__WEBPACK_IMPORTED_MODULE_5__["Events"],
+  useDidShow: _tarojs_runtime__WEBPACK_IMPORTED_MODULE_5__["useDidShow"],
+  useDidHide: _tarojs_runtime__WEBPACK_IMPORTED_MODULE_5__["useDidHide"],
+  usePullDownRefresh: _tarojs_runtime__WEBPACK_IMPORTED_MODULE_5__["usePullDownRefresh"],
+  useReachBottom: _tarojs_runtime__WEBPACK_IMPORTED_MODULE_5__["useReachBottom"],
+  usePageScroll: _tarojs_runtime__WEBPACK_IMPORTED_MODULE_5__["usePageScroll"],
+  useResize: _tarojs_runtime__WEBPACK_IMPORTED_MODULE_5__["useResize"],
+  useShareAppMessage: _tarojs_runtime__WEBPACK_IMPORTED_MODULE_5__["useShareAppMessage"],
+  useTabItemTap: _tarojs_runtime__WEBPACK_IMPORTED_MODULE_5__["useTabItemTap"],
+  useTitleClick: _tarojs_runtime__WEBPACK_IMPORTED_MODULE_5__["useTitleClick"],
+  useOptionMenuClick: _tarojs_runtime__WEBPACK_IMPORTED_MODULE_5__["useOptionMenuClick"],
+  usePullIntercept: _tarojs_runtime__WEBPACK_IMPORTED_MODULE_5__["usePullIntercept"],
+  useShareTimeline: _tarojs_runtime__WEBPACK_IMPORTED_MODULE_5__["useShareTimeline"],
+  useAddToFavorites: _tarojs_runtime__WEBPACK_IMPORTED_MODULE_5__["useAddToFavorites"],
+  useReady: _tarojs_runtime__WEBPACK_IMPORTED_MODULE_5__["useReady"],
+  useRouter: _tarojs_runtime__WEBPACK_IMPORTED_MODULE_5__["useRouter"],
+  getInitPxTransform: getInitPxTransform
+};
+Taro.initPxTransform = getInitPxTransform(Taro);
+Taro.preload = getPreload(_tarojs_runtime__WEBPACK_IMPORTED_MODULE_5__["Current"]);
+Taro.pxTransform = getPxTransform(Taro);
+/* harmony default export */ __webpack_exports__["default"] = (Taro);
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../../template/node_modules/webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js"), __webpack_require__(/*! @tarojs/runtime */ "./node_modules/@tarojs/mini-runner/node_modules/@tarojs/runtime/dist/runtime.esm.js")["window"]))
+
+/***/ }),
+
+/***/ "../utils/node_modules/@tarojs/components/mini/index.js":
+/*!**************************************************************!*\
+  !*** ../utils/node_modules/@tarojs/components/mini/index.js ***!
+  \**************************************************************/
+/*! exports provided: View, Icon, Progress, RichText, Text, Button, Checkbox, CheckboxGroup, Form, Input, Label, Picker, PickerView, PickerViewColumn, Radio, RadioGroup, Slider, Switch, CoverImage, Textarea, CoverView, MovableArea, MovableView, ScrollView, Swiper, SwiperItem, Navigator, Audio, Camera, Image, LivePlayer, Video, Canvas, Ad, WebView, Block, Map, Slot, CustomWrapper */
+/*! exports used: Button */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* unused harmony export View */
+/* unused harmony export Icon */
+/* unused harmony export Progress */
+/* unused harmony export RichText */
+/* unused harmony export Text */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Button; });
+/* unused harmony export Checkbox */
+/* unused harmony export CheckboxGroup */
+/* unused harmony export Form */
+/* unused harmony export Input */
+/* unused harmony export Label */
+/* unused harmony export Picker */
+/* unused harmony export PickerView */
+/* unused harmony export PickerViewColumn */
+/* unused harmony export Radio */
+/* unused harmony export RadioGroup */
+/* unused harmony export Slider */
+/* unused harmony export Switch */
+/* unused harmony export CoverImage */
+/* unused harmony export Textarea */
+/* unused harmony export CoverView */
+/* unused harmony export MovableArea */
+/* unused harmony export MovableView */
+/* unused harmony export ScrollView */
+/* unused harmony export Swiper */
+/* unused harmony export SwiperItem */
+/* unused harmony export Navigator */
+/* unused harmony export Audio */
+/* unused harmony export Camera */
+/* unused harmony export Image */
+/* unused harmony export LivePlayer */
+/* unused harmony export Video */
+/* unused harmony export Canvas */
+/* unused harmony export Ad */
+/* unused harmony export WebView */
+/* unused harmony export Block */
+/* unused harmony export Map */
+/* unused harmony export Slot */
+/* unused harmony export CustomWrapper */
+var View = 'view';
+var Icon = 'icon';
+var Progress = 'progress';
+var RichText = 'rich-text';
+var Text = 'text';
+var Button = 'button';
+var Checkbox = 'checkbox';
+var CheckboxGroup = 'checkbox-group';
+var Form = 'form';
+var Input = 'input';
+var Label = 'label';
+var Picker = 'picker';
+var PickerView = 'picker-view';
+var PickerViewColumn = 'picker-view-column';
+var Radio = 'radio';
+var RadioGroup = 'radio-group';
+var Slider = 'slider';
+var Switch = 'switch';
+var CoverImage = 'cover-image';
+var Textarea = 'textarea';
+var CoverView = 'cover-view';
+var MovableArea = 'movable-area';
+var MovableView = 'movable-view';
+var ScrollView = 'scroll-view';
+var Swiper = 'swiper';
+var SwiperItem = 'swiper-item';
+var Navigator = 'navigator';
+var Audio = 'audio';
+var Camera = 'camera';
+var Image = 'image';
+var LivePlayer = 'live-player';
+var Video = 'video';
+var Canvas = 'canvas';
+var Ad = 'ad';
+var WebView = 'web-view';
+var Block = 'block';
+var Map = 'map';
+var Slot = 'slot';
+var CustomWrapper = 'custom-wrapper';
+
+/***/ }),
+
+/***/ "../utils/node_modules/@tarojs/taro/index.js":
+/*!***************************************************!*\
+  !*** ../utils/node_modules/@tarojs/taro/index.js ***!
+  \***************************************************/
+/*! no static exports found */
+/*! exports used: default */
+/***/ (function(module, exports, __webpack_require__) {
+
+var _require = __webpack_require__(/*! @tarojs/runtime */ "./node_modules/@tarojs/mini-runner/node_modules/@tarojs/runtime/dist/runtime.esm.js"),
+    container = _require.container,
+    SERVICE_IDENTIFIER = _require.SERVICE_IDENTIFIER;
+
+var taro = __webpack_require__(/*! @tarojs/api */ "../utils/node_modules/@tarojs/api/dist/index.esm.js").default;
+
+var hooks = container.get(SERVICE_IDENTIFIER.Hooks);
+
+if (typeof hooks.initNativeApi === 'function') {
+  hooks.initNativeApi(taro);
+}
+
+module.exports = taro;
+module.exports.default = module.exports;
+
+/***/ }),
+
 /***/ "./node_modules/@tarojs/api/dist/index.esm.js":
 /*!****************************************************!*\
   !*** ./node_modules/@tarojs/api/dist/index.esm.js ***!

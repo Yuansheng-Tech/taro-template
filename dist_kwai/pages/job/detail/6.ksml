@@ -1,0 +1,392 @@
+
+<template is="taro_tmpl" data="{{root:root}}" />
+
+<template name="taro_tmpl">
+  <block ks:for="{{root.cn}}" ks:key="uid">
+    <template is="tmpl_0_container" data="{{i:item}}" />
+  </block>
+</template>
+
+<template name="tmpl_0_catch-view">
+  <view hover-class="{{i.hoverClass===undefined?'none':i.hoverClass}}" hover-stop-propagation="{{i.hoverStopPropagation===undefined?false:i.hoverStopPropagation}}" hover-start-time="{{i.hoverStartTime===undefined?50:i.hoverStartTime}}" hover-stay-time="{{i.hoverStayTime===undefined?400:i.hoverStayTime}}" animation="{{i.animation}}" bindtouchstart="eh" bindtouchend="eh" bindtouchcancel="eh" bindlongtap="eh" bindanimationstart="eh" bindanimationiteration="eh" bindanimationend="eh" bindtransitionend="eh" style="{{i.st}}" class="{{i.cl}}" bindtap="eh" catchtouchmove="eh"  id="{{i.uid}}">
+    <block ks:for="{{i.cn}}" ks:key="uid">
+      <template is="tmpl_0_container" data="{{i:item}}" />
+    </block>
+  </view>
+</template>
+
+<template name="tmpl_0_static-view">
+  <view hover-class="{{i.hoverClass===undefined?'none':i.hoverClass}}" hover-stop-propagation="{{i.hoverStopPropagation===undefined?false:i.hoverStopPropagation}}" hover-start-time="{{i.hoverStartTime===undefined?50:i.hoverStartTime}}" hover-stay-time="{{i.hoverStayTime===undefined?400:i.hoverStayTime}}" animation="{{i.animation}}" style="{{i.st}}" class="{{i.cl}}"  id="{{i.uid}}">
+    <block ks:for="{{i.cn}}" ks:key="uid">
+      <template is="tmpl_0_container" data="{{i:item}}" />
+    </block>
+  </view>
+</template>
+
+<template name="tmpl_0_pure-view">
+  <view style="{{i.st}}" class="{{i.cl}}"  id="{{i.uid}}">
+    <block ks:for="{{i.cn}}" ks:key="uid">
+      <template is="tmpl_0_container" data="{{i:item}}" />
+    </block>
+  </view>
+</template>
+
+<template name="tmpl_0_view">
+  <view hover-class="{{i.hoverClass===undefined?'none':i.hoverClass}}" hover-stop-propagation="{{i.hoverStopPropagation===undefined?false:i.hoverStopPropagation}}" hover-start-time="{{i.hoverStartTime===undefined?50:i.hoverStartTime}}" hover-stay-time="{{i.hoverStayTime===undefined?400:i.hoverStayTime}}" animation="{{i.animation}}" bindtouchstart="eh" bindtouchmove="eh" bindtouchend="eh" bindtouchcancel="eh" bindlongtap="eh" bindanimationstart="eh" bindanimationiteration="eh" bindanimationend="eh" bindtransitionend="eh" style="{{i.st}}" class="{{i.cl}}" bindtap="eh"  id="{{i.uid}}">
+    <block ks:for="{{i.cn}}" ks:key="uid">
+      <template is="tmpl_0_container" data="{{i:item}}" />
+    </block>
+  </view>
+</template>
+
+<template name="tmpl_0_icon">
+  <icon type="{{i.type}}" size="{{i.size===undefined?23:i.size}}" color="{{i.color}}" style="{{i.st}}" class="{{i.cl}}" bindtap="eh"  id="{{i.uid}}"></icon>
+</template>
+
+<template name="tmpl_0_progress">
+  <progress percent="{{i.percent}}" stroke-width="{{i.strokeWidth===undefined?6:i.strokeWidth}}" color="{{i.color===undefined?'#09BB07':i.color}}" activeColor="{{i.activeColor===undefined?'#09BB07':i.activeColor}}" backgroundColor="{{i.backgroundColor===undefined?'#EBEBEB':i.backgroundColor}}" active="{{i.active===undefined?false:i.active}}" active-mode="{{i.activeMode===undefined?'backwards':i.activeMode}}" show-info="{{i.showInfo===undefined?false:i.showInfo}}" style="{{i.st}}" class="{{i.cl}}" bindtap="eh"  id="{{i.uid}}"></progress>
+</template>
+
+<template name="tmpl_0_rich-text">
+  <rich-text nodes="{{i.nodes===undefined?[]:i.nodes}}" space="{{i.space}}" style="{{i.st}}" class="{{i.cl}}" bindtap="eh"  id="{{i.uid}}"></rich-text>
+</template>
+
+<template name="tmpl_0_static-text">
+  <text selectable="{{i.selectable===undefined?false:i.selectable}}" space="{{i.space}}" decode="{{i.decode===undefined?false:i.decode}}" style="{{i.st}}" class="{{i.cl}}"  id="{{i.uid}}">
+    <block ks:for="{{i.cn}}" ks:key="uid">
+      <template is="tmpl_0_container" data="{{i:item}}" />
+    </block>
+  </text>
+</template>
+
+<template name="tmpl_0_text">
+  <text selectable="{{i.selectable===undefined?false:i.selectable}}" space="{{i.space}}" decode="{{i.decode===undefined?false:i.decode}}" style="{{i.st}}" class="{{i.cl}}" bindtap="eh"  id="{{i.uid}}">
+    <block ks:for="{{i.cn}}" ks:key="uid">
+      <template is="tmpl_0_container" data="{{i:item}}" />
+    </block>
+  </text>
+</template>
+
+<template name="tmpl_0_button">
+  <button size="{{i.size===undefined?'default':i.size}}" type="{{i.type}}" plain="{{i.plain===undefined?false:i.plain}}" disabled="{{i.disabled}}" loading="{{i.loading===undefined?false:i.loading}}" form-type="{{i.formType}}" open-type="{{i.openType}}" hover-class="{{i.hoverClass===undefined?'button-hover':i.hoverClass}}" hover-stop-propagation="{{i.hoverStopPropagation===undefined?false:i.hoverStopPropagation}}" hover-start-time="{{i.hoverStartTime===undefined?20:i.hoverStartTime}}" hover-stay-time="{{i.hoverStayTime===undefined?70:i.hoverStayTime}}" name="{{i.name}}" bindtouchstart="eh" bindtouchmove="eh" bindtouchend="eh" bindtouchcancel="eh" bindlongtap="eh" bindgetphonenumber="eh" style="{{i.st}}" class="{{i.cl}}" bindtap="eh"  id="{{i.uid}}">
+    <block ks:for="{{i.cn}}" ks:key="uid">
+      <template is="tmpl_0_container" data="{{i:item}}" />
+    </block>
+  </button>
+</template>
+
+<template name="tmpl_0_checkbox">
+  <checkbox value="{{i.value}}" disabled="{{i.disabled}}" checked="{{i.checked===undefined?false:i.checked}}" color="{{i.color===undefined?'#09BB07':i.color}}" name="{{i.name}}" style="{{i.st}}" class="{{i.cl}}" bindtap="eh"  id="{{i.uid}}">
+    <block ks:for="{{i.cn}}" ks:key="uid">
+      <template is="tmpl_0_container" data="{{i:item}}" />
+    </block>
+  </checkbox>
+</template>
+
+<template name="tmpl_0_checkbox-group">
+  <checkbox-group bindchange="eh" name="{{i.name}}" style="{{i.st}}" class="{{i.cl}}" bindtap="eh"  id="{{i.uid}}">
+    <block ks:for="{{i.cn}}" ks:key="uid">
+      <template is="tmpl_0_container" data="{{i:item}}" />
+    </block>
+  </checkbox-group>
+</template>
+
+<template name="tmpl_0_form">
+  <form report-submit="{{i.reportSubmit===undefined?false:i.reportSubmit}}" bindsubmit="eh" bindreset="eh" name="{{i.name}}" style="{{i.st}}" class="{{i.cl}}" bindtap="eh"  id="{{i.uid}}">
+    <block ks:for="{{i.cn}}" ks:key="uid">
+      <template is="tmpl_0_container" data="{{i:item}}" />
+    </block>
+  </form>
+</template>
+
+<template name="tmpl_0_input">
+  <template is="{{i.focus ? 'tmpl_0_input_focus' : 'tmpl_0_input_blur'}}" data="{{i:i}}" />
+</template>
+
+<template name="tmpl_0_input_focus">
+  <input value="{{i.value}}" type="{{i.type===undefined?'':i.type}}" password="{{i.password===undefined?false:i.password}}" placeholder="{{i.placeholder}}" placeholder-style="{{i.placeholderStyle}}" disabled="{{i.disabled}}" maxlength="{{i.maxlength===undefined?140:i.maxlength}}" focus="{{i.focus===undefined?false:i.focus}}" confirm-type="{{i.confirmType===undefined?'done':i.confirmType}}" bindinput="eh" bindfocus="eh" bindblur="eh" bindconfirm="eh" name="{{i.name}}" style="{{i.st}}" class="{{i.cl}}" bindtap="eh"  id="{{i.uid}}"></input>
+</template>
+
+<template name="tmpl_0_input_blur">
+  <input value="{{i.value}}" type="{{i.type===undefined?'':i.type}}" password="{{i.password===undefined?false:i.password}}" placeholder="{{i.placeholder}}" placeholder-style="{{i.placeholderStyle}}" disabled="{{i.disabled}}" maxlength="{{i.maxlength===undefined?140:i.maxlength}}" confirm-type="{{i.confirmType===undefined?'done':i.confirmType}}" bindinput="eh" bindfocus="eh" bindblur="eh" bindconfirm="eh" name="{{i.name}}" style="{{i.st}}" class="{{i.cl}}" bindtap="eh"  id="{{i.uid}}"></input>
+</template>
+
+<template name="tmpl_0_label">
+  <label for="{{i.for}}" name="{{i.name}}" style="{{i.st}}" class="{{i.cl}}" bindtap="eh"  id="{{i.uid}}">
+    <block ks:for="{{i.cn}}" ks:key="uid">
+      <template is="tmpl_0_container" data="{{i:item}}" />
+    </block>
+  </label>
+</template>
+
+<template name="tmpl_0_picker">
+  <picker mode="{{i.mode===undefined?'selector':i.mode}}" disabled="{{i.disabled}}" range="{{i.range}}" range-key="{{i.rangeKey}}" value="{{i.value}}" start="{{i.start}}" end="{{i.end}}" fields="{{i.fields===undefined?'day':i.fields}}" custom-item="{{i.customItem}}" name="{{i.name}}" bindcancel="eh" bindchange="eh" bindcolumnchange="eh" style="{{i.st}}" class="{{i.cl}}" bindtap="eh"  id="{{i.uid}}">
+    <block ks:for="{{i.cn}}" ks:key="uid">
+      <template is="tmpl_0_container" data="{{i:item}}" />
+    </block>
+  </picker>
+</template>
+
+<template name="tmpl_0_picker-view">
+  <picker-view value="{{i.value}}" indicator-style="{{i.indicatorStyle}}" indicator-class="{{i.indicatorClass}}" mask-style="{{i.maskStyle}}" mask-class="{{i.maskClass}}" bindchange="eh" name="{{i.name}}" style="{{i.st}}" class="{{i.cl}}" bindtap="eh"  id="{{i.uid}}">
+    <block ks:for="{{i.cn}}" ks:key="uid">
+      <template is="tmpl_0_container" data="{{i:item}}" />
+    </block>
+  </picker-view>
+</template>
+
+<template name="tmpl_0_picker-view-column">
+  <picker-view-column name="{{i.name}}" style="{{i.st}}" class="{{i.cl}}" bindtap="eh"  id="{{i.uid}}">
+    <block ks:for="{{i.cn}}" ks:key="uid">
+      <template is="tmpl_0_container" data="{{i:item}}" />
+    </block>
+  </picker-view-column>
+</template>
+
+<template name="tmpl_0_radio">
+  <radio value="{{i.value}}" checked="{{i.checked===undefined?false:i.checked}}" disabled="{{i.disabled}}" color="{{i.color===undefined?'#09BB07':i.color}}" name="{{i.name}}" style="{{i.st}}" class="{{i.cl}}" bindtap="eh"  id="{{i.uid}}">
+    <block ks:for="{{i.cn}}" ks:key="uid">
+      <template is="tmpl_0_container" data="{{i:item}}" />
+    </block>
+  </radio>
+</template>
+
+<template name="tmpl_0_radio-group">
+  <radio-group bindchange="eh" name="{{i.name}}" style="{{i.st}}" class="{{i.cl}}" bindtap="eh"  id="{{i.uid}}">
+    <block ks:for="{{i.cn}}" ks:key="uid">
+      <template is="tmpl_0_container" data="{{i:item}}" />
+    </block>
+  </radio-group>
+</template>
+
+<template name="tmpl_0_slider">
+  <slider min="{{i.min===undefined?0:i.min}}" max="{{i.max===undefined?100:i.max}}" step="{{i.step===undefined?1:i.step}}" disabled="{{i.disabled}}" value="{{i.value===undefined?0:i.value}}" activeColor="{{i.activeColor===undefined?'#1aad19':i.activeColor}}" backgroundColor="{{i.backgroundColor===undefined?'#e9e9e9':i.backgroundColor}}" block-size="{{i.blockSize===undefined?28:i.blockSize}}" block-color="{{i.blockColor===undefined?'#ffffff':i.blockColor}}" show-value="{{i.showValue===undefined?false:i.showValue}}" bindchange="eh" bindchanging="eh" name="{{i.name}}" color="{{i.color===undefined?'#e9e9e9':i.color}}" selected-color="{{i.selectedColor===undefined?'#1aad19':i.selectedColor}}" style="{{i.st}}" class="{{i.cl}}" bindtap="eh"  id="{{i.uid}}"></slider>
+</template>
+
+<template name="tmpl_0_switch">
+  <switch checked="{{i.checked===undefined?false:i.checked}}" disabled="{{i.disabled}}" type="{{i.type===undefined?'switch':i.type}}" color="{{i.color===undefined?'#04BE02':i.color}}" bindchange="eh" name="{{i.name}}" style="{{i.st}}" class="{{i.cl}}" bindtap="eh"  id="{{i.uid}}"></switch>
+</template>
+
+<template name="tmpl_0_cover-image">
+  <cover-image src="{{i.src}}" bindload="eh" binderror="eh" style="{{i.st}}" class="{{i.cl}}" bindtap="eh"  id="{{i.uid}}">
+    <block ks:for="{{i.cn}}" ks:key="uid">
+      <template is="tmpl_0_container" data="{{i:item}}" />
+    </block>
+  </cover-image>
+</template>
+
+<template name="tmpl_0_textarea">
+  <template is="{{i.focus ? 'tmpl_0_textarea_focus' : 'tmpl_0_textarea_blur'}}" data="{{i:i}}" />
+</template>
+
+<template name="tmpl_0_textarea_focus">
+  <textarea value="{{i.value}}" placeholder="{{i.placeholder}}" placeholder-style="{{i.placeholderStyle}}" placeholder-class="{{i.placeholderClass===undefined?'textarea-placeholder':i.placeholderClass}}" disabled="{{i.disabled}}" maxlength="{{i.maxlength===undefined?140:i.maxlength}}" auto-focus="{{i.autoFocus===undefined?false:i.autoFocus}}" focus="{{i.focus===undefined?false:i.focus}}" auto-height="{{i.autoHeight===undefined?false:i.autoHeight}}" fixed="{{i.fixed===undefined?false:i.fixed}}" cursor-spacing="{{i.cursorSpacing===undefined?0:i.cursorSpacing}}" cursor="{{i.cursor===undefined?-1:i.cursor}}" selection-start="{{i.selectionStart===undefined?-1:i.selectionStart}}" selection-end="{{i.selectionEnd===undefined?-1:i.selectionEnd}}" bindfocus="eh" bindblur="eh" bindlinechange="eh" bindinput="eh" bindconfirm="eh" name="{{i.name}}" style="{{i.st}}" class="{{i.cl}}" bindtap="eh"  id="{{i.uid}}"></textarea>
+</template>
+
+<template name="tmpl_0_textarea_blur">
+  <textarea value="{{i.value}}" placeholder="{{i.placeholder}}" placeholder-style="{{i.placeholderStyle}}" placeholder-class="{{i.placeholderClass===undefined?'textarea-placeholder':i.placeholderClass}}" disabled="{{i.disabled}}" maxlength="{{i.maxlength===undefined?140:i.maxlength}}" auto-focus="{{i.autoFocus===undefined?false:i.autoFocus}}" auto-height="{{i.autoHeight===undefined?false:i.autoHeight}}" fixed="{{i.fixed===undefined?false:i.fixed}}" cursor-spacing="{{i.cursorSpacing===undefined?0:i.cursorSpacing}}" cursor="{{i.cursor===undefined?-1:i.cursor}}" selection-start="{{i.selectionStart===undefined?-1:i.selectionStart}}" selection-end="{{i.selectionEnd===undefined?-1:i.selectionEnd}}" bindfocus="eh" bindblur="eh" bindlinechange="eh" bindinput="eh" bindconfirm="eh" name="{{i.name}}" style="{{i.st}}" class="{{i.cl}}" bindtap="eh"  id="{{i.uid}}"></textarea>
+</template>
+
+<template name="tmpl_0_cover-view">
+  <cover-view scroll-top="{{i.scrollTop===undefined?false:i.scrollTop}}" bindtouchstart="eh" bindtouchmove="eh" bindtouchend="eh" bindtouchcancel="eh" bindlongtap="eh" style="{{i.st}}" class="{{i.cl}}" bindtap="eh"  id="{{i.uid}}">
+    <block ks:for="{{i.cn}}" ks:key="uid">
+      <cover-view ks:if="{{item.nn==='cover-view'}}" scroll-top="{{item.scrollTop===undefined?false:i.scrollTop}}" bindtouchstart="eh" bindtouchmove="eh" bindtouchend="eh" bindtouchcancel="eh" bindlongtap="eh" style="{{item.st}}" class="{{item.cl}}" bindtap="eh" id="{{item.uid}}">
+        <block ks:for="{{item.cn}}" ks:key="uid">
+          <cover-view ks:if="{{item.nn==='cover-view'}}" scroll-top="{{item.scrollTop===undefined?false:i.scrollTop}}" bindtouchstart="eh" bindtouchmove="eh" bindtouchend="eh" bindtouchcancel="eh" bindlongtap="eh" style="{{item.st}}" class="{{item.cl}}" bindtap="eh" id="{{item.uid}}">
+            <block ks:for="{{item.cn}}" ks:key="uid">
+              <cover-view ks:if="{{item.nn==='cover-view'}}" scroll-top="{{item.scrollTop===undefined?false:i.scrollTop}}" bindtouchstart="eh" bindtouchmove="eh" bindtouchend="eh" bindtouchcancel="eh" bindlongtap="eh" style="{{item.st}}" class="{{item.cl}}" bindtap="eh" id="{{item.uid}}">
+                <block ks:for="{{item.cn}}" ks:key="uid">
+                  <cover-view ks:if="{{item.nn==='cover-view'}}" scroll-top="{{item.scrollTop===undefined?false:i.scrollTop}}" bindtouchstart="eh" bindtouchmove="eh" bindtouchend="eh" bindtouchcancel="eh" bindlongtap="eh" style="{{item.st}}" class="{{item.cl}}" bindtap="eh" id="{{item.uid}}">
+                    <block ks:for="{{item.cn}}" ks:key="uid">
+                      <cover-view ks:if="{{item.nn==='cover-view'}}" scroll-top="{{item.scrollTop===undefined?false:i.scrollTop}}" bindtouchstart="eh" bindtouchmove="eh" bindtouchend="eh" bindtouchcancel="eh" bindlongtap="eh" style="{{item.st}}" class="{{item.cl}}" bindtap="eh" id="{{item.uid}}">
+                        <block ks:for="{{item.cn}}" ks:key="uid">
+                          <cover-view ks:if="{{item.nn==='cover-view'}}" scroll-top="{{item.scrollTop===undefined?false:i.scrollTop}}" bindtouchstart="eh" bindtouchmove="eh" bindtouchend="eh" bindtouchcancel="eh" bindlongtap="eh" style="{{item.st}}" class="{{item.cl}}" bindtap="eh" id="{{item.uid}}">
+                            <block ks:for="{{item.cn}}" ks:key="uid">
+                              <cover-view ks:if="{{item.nn==='cover-view'}}" scroll-top="{{item.scrollTop===undefined?false:i.scrollTop}}" bindtouchstart="eh" bindtouchmove="eh" bindtouchend="eh" bindtouchcancel="eh" bindlongtap="eh" style="{{item.st}}" class="{{item.cl}}" bindtap="eh" id="{{item.uid}}">
+                                <block ks:for="{{item.cn}}" ks:key="uid">
+                                  
+                                  <cover-image ks:elif="{{item.nn==='cover-image'}}"  src="{{item.src}}" bindload="eh" binderror="eh" style="{{item.st}}" class="{{item.cl}}" bindtap="eh" id="{{item.uid}}" />
+                                  <block ks:elif="{{item.nn==='#text'}}">{{item.v}}</block>
+                                </block>
+                              </cover-view>
+                              <cover-image ks:elif="{{item.nn==='cover-image'}}"  src="{{item.src}}" bindload="eh" binderror="eh" style="{{item.st}}" class="{{item.cl}}" bindtap="eh" id="{{item.uid}}" />
+                              <block ks:elif="{{item.nn==='#text'}}">{{item.v}}</block>
+                            </block>
+                          </cover-view>
+                          <cover-image ks:elif="{{item.nn==='cover-image'}}"  src="{{item.src}}" bindload="eh" binderror="eh" style="{{item.st}}" class="{{item.cl}}" bindtap="eh" id="{{item.uid}}" />
+                          <block ks:elif="{{item.nn==='#text'}}">{{item.v}}</block>
+                        </block>
+                      </cover-view>
+                      <cover-image ks:elif="{{item.nn==='cover-image'}}"  src="{{item.src}}" bindload="eh" binderror="eh" style="{{item.st}}" class="{{item.cl}}" bindtap="eh" id="{{item.uid}}" />
+                      <block ks:elif="{{item.nn==='#text'}}">{{item.v}}</block>
+                    </block>
+                  </cover-view>
+                  <cover-image ks:elif="{{item.nn==='cover-image'}}"  src="{{item.src}}" bindload="eh" binderror="eh" style="{{item.st}}" class="{{item.cl}}" bindtap="eh" id="{{item.uid}}" />
+                  <block ks:elif="{{item.nn==='#text'}}">{{item.v}}</block>
+                </block>
+              </cover-view>
+              <cover-image ks:elif="{{item.nn==='cover-image'}}"  src="{{item.src}}" bindload="eh" binderror="eh" style="{{item.st}}" class="{{item.cl}}" bindtap="eh" id="{{item.uid}}" />
+              <block ks:elif="{{item.nn==='#text'}}">{{item.v}}</block>
+            </block>
+          </cover-view>
+          <cover-image ks:elif="{{item.nn==='cover-image'}}"  src="{{item.src}}" bindload="eh" binderror="eh" style="{{item.st}}" class="{{item.cl}}" bindtap="eh" id="{{item.uid}}" />
+          <block ks:elif="{{item.nn==='#text'}}">{{item.v}}</block>
+        </block>
+      </cover-view>
+      <cover-image ks:elif="{{item.nn==='cover-image'}}"  src="{{item.src}}" bindload="eh" binderror="eh" style="{{item.st}}" class="{{item.cl}}" bindtap="eh" id="{{item.uid}}" />
+      <block ks:elif="{{item.nn==='#text'}}">{{item.v}}</block>
+    </block>
+  </cover-view>
+</template>
+
+<template name="tmpl_0_movable-area">
+  <movable-area scale-area="{{i.scaleArea===undefined?false:i.scaleArea}}" style="{{i.st}}" class="{{i.cl}}" bindtap="eh"  id="{{i.uid}}">
+    <block ks:for="{{i.cn}}" ks:key="uid">
+      <template is="tmpl_0_container" data="{{i:item}}" />
+    </block>
+  </movable-area>
+</template>
+
+<template name="tmpl_0_movable-view">
+  <movable-view direction="{{i.direction===undefined?none:i.direction}}" inertia="{{i.inertia===undefined?false:i.inertia}}" out-of-bounds="{{i.outOfBounds===undefined?false:i.outOfBounds}}" x="{{i.x}}" y="{{i.y}}" damping="{{i.damping===undefined?20:i.damping}}" friction="{{i.friction===undefined?2:i.friction}}" disabled="{{i.disabled}}" scale="{{i.scale===undefined?false:i.scale}}" scale-min="{{i.scaleMin===undefined?0.5:i.scaleMin}}" scale-max="{{i.scaleMax===undefined?10:i.scaleMax}}" scale-value="{{i.scaleValue===undefined?1:i.scaleValue}}" animation="{{i.animation===undefined?true:i.animation}}" bindchange="eh" bindscale="eh" bindhtouchmove="eh" bindvtouchmove="eh" width="{{i.width===undefined?'10px':i.width}}" height="{{i.height===undefined?'10px':i.height}}" bindtouchstart="eh" bindtouchmove="eh" bindtouchend="eh" bindtouchcancel="eh" bindlongtap="eh" bindanimationstart="eh" bindanimationiteration="eh" bindanimationend="eh" bindtransitionend="eh" style="{{i.st}}" class="{{i.cl}}" bindtap="eh"  id="{{i.uid}}">
+    <block ks:for="{{i.cn}}" ks:key="uid">
+      <template is="tmpl_0_container" data="{{i:item}}" />
+    </block>
+  </movable-view>
+</template>
+
+<template name="tmpl_0_scroll-view">
+  <scroll-view scroll-x="{{i.scrollX===undefined?false:i.scrollX}}" scroll-y="{{i.scrollY===undefined?false:i.scrollY}}" upper-threshold="{{i.upperThreshold===undefined?50:i.upperThreshold}}" lower-threshold="{{i.lowerThreshold===undefined?50:i.lowerThreshold}}" scroll-top="{{i.scrollTop}}" scroll-left="{{i.scrollLeft}}" scroll-into-view="{{i.scrollIntoView}}" scroll-with-animation="{{i.scrollWithAnimation===undefined?false:i.scrollWithAnimation}}" enable-back-to-top="{{i.enableBackToTop===undefined?false:i.enableBackToTop}}" bindscrolltoupper="eh" bindscrolltolower="eh" bindscroll="eh" bindtouchstart="eh" bindtouchmove="eh" bindtouchend="eh" bindtouchcancel="eh" bindlongtap="eh" bindanimationstart="eh" bindanimationiteration="eh" bindanimationend="eh" bindtransitionend="eh" style="{{i.st}}" class="{{i.cl}}" bindtap="eh"  id="{{i.uid}}">
+    <block ks:for="{{i.cn}}" ks:key="uid">
+      <template is="tmpl_0_container" data="{{i:item}}" />
+    </block>
+  </scroll-view>
+</template>
+
+<template name="tmpl_0_swiper">
+  <swiper indicator-dots="{{i.indicatorDots===undefined?false:i.indicatorDots}}" indicator-color="{{i.indicatorColor===undefined?'rgba(0, 0, 0, .3)':i.indicatorColor}}" indicator-active-color="{{i.indicatorActiveColor===undefined?'#000000':i.indicatorActiveColor}}" autoplay="{{i.autoplay===undefined?false:i.autoplay}}" current="{{i.current===undefined?0:i.current}}" interval="{{i.interval===undefined?5000:i.interval}}" duration="{{i.duration===undefined?500:i.duration}}" circular="{{i.circular===undefined?false:i.circular}}" vertical="{{i.vertical===undefined?false:i.vertical}}" previous-margin="{{i.previousMargin===undefined?'0px':i.previousMargin}}" next-margin="{{i.nextMargin===undefined?'0px':i.nextMargin}}" display-multiple-items="{{i.displayMultipleItems===undefined?1:i.displayMultipleItems}}" bindchange="eh" bindtransition="eh" bindanimationfinish="eh" bindtouchstart="eh" bindtouchmove="eh" bindtouchend="eh" bindtouchcancel="eh" bindlongtap="eh" easing-function="{{i.easingFunction===undefined?'default':i.easingFunction}}" style="{{i.st}}" class="{{i.cl}}" bindtap="eh"  id="{{i.uid}}">
+    <block ks:for="{{i.cn}}" ks:key="uid">
+      <template is="tmpl_0_container" data="{{i:item}}" />
+    </block>
+  </swiper>
+</template>
+
+<template name="tmpl_0_swiper-item">
+  <swiper-item item-id="{{i.itemId}}" class="{{i.cl}}" bindtap="eh"  id="{{i.uid}}">
+    <block ks:for="{{i.cn}}" ks:key="uid">
+      <template is="tmpl_0_container" data="{{i:item}}" />
+    </block>
+  </swiper-item>
+</template>
+
+<template name="tmpl_0_navigator">
+  <navigator url="{{i.url}}" open-type="{{i.openType===undefined?'navigate':i.openType}}" delta="{{i.delta===undefined?1:i.delta}}" hover-class="{{i.hoverClass===undefined?'navigator-hover':i.hoverClass}}" hover-stop-propagation="{{i.hoverStopPropagation===undefined?false:i.hoverStopPropagation}}" hover-start-time="{{i.hoverStartTime===undefined?50:i.hoverStartTime}}" hover-stay-time="{{i.hoverStayTime===undefined?600:i.hoverStayTime}}" bindsuccess="eh" bindfail="eh" bindcomplete="eh" style="{{i.st}}" class="{{i.cl}}" bindtap="eh"  id="{{i.uid}}">
+    <block ks:for="{{i.cn}}" ks:key="uid">
+      <template is="tmpl_0_container" data="{{i:item}}" />
+    </block>
+  </navigator>
+</template>
+
+<template name="tmpl_0_audio">
+  <audio id="{{i.id}}" src="{{i.src}}" loop="{{i.loop===undefined?false:i.loop}}" controls="{{i.controls===undefined?false:i.controls}}" poster="{{i.poster}}" name="{{i.name}}" author="{{i.author}}" binderror="eh" bindplay="eh" bindpause="eh" bindtimeupdate="eh" bindended="eh" style="{{i.st}}" class="{{i.cl}}" bindtap="eh"  id="{{i.uid}}"></audio>
+</template>
+
+<template name="tmpl_0_camera">
+  <camera device-position="{{i.devicePosition===undefined?'back':i.devicePosition}}" flash="{{i.flash===undefined?'auto':i.flash}}" bindstop="eh" binderror="eh" style="{{i.st}}" class="{{i.cl}}" bindtap="eh"  id="{{i.uid}}">
+    <block ks:for="{{i.cn}}" ks:key="uid">
+      <template is="tmpl_0_container" data="{{i:item}}" />
+    </block>
+  </camera>
+</template>
+
+<template name="tmpl_0_static-image">
+  <image src="{{i.src}}" mode="{{i.mode===undefined?'scaleToFill':i.mode}}" lazy-load="{{i.lazyLoad===undefined?false:i.lazyLoad}}" style="{{i.st}}" class="{{i.cl}}"  id="{{i.uid}}">
+    <block ks:for="{{i.cn}}" ks:key="uid">
+      <template is="tmpl_0_container" data="{{i:item}}" />
+    </block>
+  </image>
+</template>
+
+<template name="tmpl_0_image">
+  <image src="{{i.src}}" mode="{{i.mode===undefined?'scaleToFill':i.mode}}" lazy-load="{{i.lazyLoad===undefined?false:i.lazyLoad}}" binderror="eh" bindload="eh" bindtouchstart="eh" bindtouchmove="eh" bindtouchend="eh" bindtouchcancel="eh" bindlongtap="eh" style="{{i.st}}" class="{{i.cl}}" bindtap="eh"  id="{{i.uid}}">
+    <block ks:for="{{i.cn}}" ks:key="uid">
+      <template is="tmpl_0_container" data="{{i:item}}" />
+    </block>
+  </image>
+</template>
+
+<template name="tmpl_0_live-player">
+  <live-player src="{{i.src}}" autoplay="{{i.autoplay===undefined?false:i.autoplay}}" muted="{{i.muted===undefined?false:i.muted}}" orientation="{{i.orientation===undefined?'vertical':i.orientation}}" object-fit="{{i.objectFit===undefined?'contain':i.objectFit}}" background-mute="{{i.backgroundMute===undefined?false:i.backgroundMute}}" min-cache="{{i.minCache===undefined?1:i.minCache}}" max-cache="{{i.maxCache===undefined?3:i.maxCache}}" animation="{{i.animation}}" bindstatechange="eh" bindfullscreenchange="eh" bindnetstatus="eh" style="{{i.st}}" class="{{i.cl}}" bindtap="eh"  id="{{i.uid}}">
+    <block ks:for="{{i.cn}}" ks:key="uid">
+      <template is="tmpl_0_container" data="{{i:item}}" />
+    </block>
+  </live-player>
+</template>
+
+<template name="tmpl_0_video">
+  <video src="{{i.src}}" duration="{{i.duration}}" controls="{{i.controls===undefined?true:i.controls}}" danmu-list="{{i.danmuList}}" danmu-btn="{{i.danmuBtn}}" enable-danmu="{{i.enableDanmu}}" autoplay="{{i.autoplay===undefined?false:i.autoplay}}" loop="{{i.loop===undefined?false:i.loop}}" muted="{{i.muted===undefined?false:i.muted}}" initial-time="{{i.initialTime===undefined?0:i.initialTime}}" page-gesture="{{i.pageGesture===undefined?false:i.pageGesture}}" direction="{{i.direction}}" show-progress="{{i.showProgress===undefined?true:i.showProgress}}" show-fullscreen-btn="{{i.showFullscreenBtn===undefined?true:i.showFullscreenBtn}}" show-play-btn="{{i.showPlayBtn===undefined?true:i.showPlayBtn}}" show-center-play-btn="{{i.showCenterPlayBtn===undefined?true:i.showCenterPlayBtn}}" enable-progress-gesture="{{i.enableProgressGesture===undefined?true:i.enableProgressGesture}}" object-fit="{{i.objectFit===undefined?'contain':i.objectFit}}" poster="{{i.poster}}" show-mute-btn="{{i.showMuteBtn===undefined?false:i.showMuteBtn}}" animation="{{i.animation}}" bindplay="eh" bindpause="eh" bindended="eh" bindtimeupdate="eh" bindfullscreenchange="eh" bindwaiting="eh" binderror="eh" style="{{i.st}}" class="{{i.cl}}" bindtap="eh"  id="{{i.uid}}">
+    <block ks:for="{{i.cn}}" ks:key="uid">
+      <template is="tmpl_0_container" data="{{i:item}}" />
+    </block>
+  </video>
+</template>
+
+<template name="tmpl_0_canvas">
+  <canvas canvas-id="{{i.canvasId}}" disable-scroll="{{i.disableScroll===undefined?false:i.disableScroll}}" binderror="eh" bindtouchstart="eh" bindtouchmove="eh" bindtouchend="eh" bindtouchcancel="eh" bindlongtap="eh" style="{{i.st}}" class="{{i.cl}}" bindtap="eh"  id="{{i.uid}}">
+    <block ks:for="{{i.cn}}" ks:key="uid">
+      <template is="tmpl_0_container" data="{{i:item}}" />
+    </block>
+  </canvas>
+</template>
+
+<template name="tmpl_0_ad">
+  <ad unit-id="{{i.unitId}}" ad-intervals="{{i.adIntervals}}" bindload="eh" binderror="eh" bindclose="eh" type="{{i.type}}" style="{{i.st}}" class="{{i.cl}}" bindtap="eh"  id="{{i.uid}}"></ad>
+</template>
+
+<template name="tmpl_0_web-view">
+  <web-view src="{{i.src}}" bindmessage="eh" bindload="eh" binderror="eh" style="{{i.st}}" class="{{i.cl}}" bindtap="eh"  id="{{i.uid}}">
+    <block ks:for="{{i.cn}}" ks:key="uid">
+      <template is="tmpl_0_container" data="{{i:item}}" />
+    </block>
+  </web-view>
+</template>
+
+<template name="tmpl_0_block">
+  <block  id="{{i.uid}}">
+    <block ks:for="{{i.cn}}" ks:key="uid">
+      <template is="tmpl_0_container" data="{{i:item}}" />
+    </block>
+  </block>
+</template>
+
+<template name="tmpl_0_map">
+  <map longitude="{{i.longitude}}" latitude="{{i.latitude}}" scale="{{i.scale===undefined?16:i.scale}}" markers="{{i.markers===undefined?[]:i.markers}}" covers="{{i.covers}}" polyline="{{i.polyline===undefined?[]:i.polyline}}" circles="{{i.circles===undefined?[]:i.circles}}" controls="{{i.controls===undefined?[]:i.controls}}" include-points="{{i.includePoints===undefined?[]:i.includePoints}}" show-location="{{i.showLocation}}" layer-style="{{i.layerStyle===undefined?1:i.layerStyle}}" bindmarkertap="eh" bindcontroltap="eh" bindcallouttap="eh" bindupdated="eh" bindtouchstart="eh" bindtouchmove="eh" bindtouchend="eh" bindtouchcancel="eh" bindlongtap="eh" style="{{i.st}}" class="{{i.cl}}" bindtap="eh"  id="{{i.uid}}">
+    <block ks:for="{{i.cn}}" ks:key="uid">
+      <template is="tmpl_0_container" data="{{i:item}}" />
+    </block>
+  </map>
+</template>
+
+<template name="tmpl_0_slot">
+  <view slot="{{i.name}}"  id="{{i.uid}}">
+    <block ks:for="{{i.cn}}" ks:key="uid">
+      <template is="tmpl_0_container" data="{{i:item}}" />
+    </block>
+  </view>
+</template>
+
+<template name="tmpl_0_slot-view">
+  <view slot="{{i.name}}"  id="{{i.uid}}">
+    <block ks:for="{{i.cn}}" ks:key="uid">
+      <template is="tmpl_0_container" data="{{i:item}}" />
+    </block>
+  </view>
+</template>
+
+<template name="tmpl_0_#text" data="{{i:i}}">
+  <block>{{i.v}}</block>
+</template>
+
+<template name="tmpl_0_container">
+  <template is="{{'tmpl_0_' + i.nn}}" data="{{i:i}}" />
+</template>
