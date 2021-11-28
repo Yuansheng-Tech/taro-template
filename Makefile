@@ -6,6 +6,11 @@ copy:
 	cp -rf ../components/dist ./node_modules/@ysyp/ui/
 	cp -rf ../stores/dist ./node_modules/@ysyp/stores/
 
+publish:
+	cd ../utils && yarn build && yarn release
+	cd ../stores && yarn build && yarn release
+	cd ../components && yarn build && yarn release
+
 deploy:
 	sudo yarn build:kwai
 	cd build_kwai && sudo sed -i '' 's/.\/assets/assets/g' app.json
