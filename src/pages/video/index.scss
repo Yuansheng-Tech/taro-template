@@ -1,0 +1,68 @@
+.discover-swiper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+
+  .discover-video-main {
+    width: 100%;
+    height: 100%;
+    display: flex
+  }
+
+  .discover-video {
+    margin: auto 0;
+    z-index: -1;
+  }
+
+  .discover-actions {
+    position: absolute;
+    right: 0;
+    top: 35%;
+
+    .discover-action {
+      margin-top: 25px;
+      margin-right: 20px;
+      text-align: center;
+    }
+
+    .discover-user-icon {
+      margin-bottom: 40px;
+    }
+
+    .discover-action-icon {
+      width: 80px;
+      height:80px;
+      line-height: 80px;
+      background-color: #555;
+      border-radius: 50%;
+    }
+    .discover-action-number {
+      text-align: center;
+    }
+  }
+
+  .discover-footer {
+    position: absolute;
+    width: 100%;
+    // padding-bottom: 40px;
+    bottom: 0;
+
+    .discover-user-name {
+      padding: 20px 30px;
+    }
+    .discover-desc {
+      padding: 0 30px 20px;
+    }
+
+    .discover-play-line {
+      width: 100%;
+
+      .discover-play-progress {
+        width: 100%;
+      }
+    }
+  }
+}

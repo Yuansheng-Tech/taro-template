@@ -1,16 +1,5 @@
 export default {
-  pages: [
-    "pages/index/index",
-    "pages/help/index",
-    "pages/job/detail/2",
-    "pages/job/apply/success",
-    "pages/job/detail/1",
-    "pages/job/detail/3",
-    "pages/job/apply",
-    "pages/job/detail/4",
-    "pages/job/detail/5",
-    "pages/job/detail/6",
-  ],
+  pages: ["pages/index/index", "pages/guoxue/index", "pages/mine/index"],
   subpackages: [
     {
       root: "subPackages",
@@ -35,21 +24,29 @@ export default {
     },
   },
   tabBar: {
-    color: "#cdcdcd",
-    selectedColor: "#1296db",
+    color: "#36663c",
+    selectedColor: "#bae8e8",
     backgroundColor: "#fff",
     list: [
       {
-        text: "梦企传媒",
+        text: "首页",
         pagePath: "pages/index/index",
-        selectedIconPath: "./assets/images/footer/https:files_home2.png",
-        iconPath: "./assets/images/footer/https:files_home1.png",
+        selectedIconPath:
+          "./assets/images/footer/https:baby_childhome-hover.png",
+        iconPath: "./assets/images/footer/https:baby_childhome.png",
       },
       {
-        text: "帮助",
-        pagePath: "pages/help/index",
-        selectedIconPath: "./assets/images/footer/https:files_help2.png",
-        iconPath: "./assets/images/footer/https:files_help1.png",
+        text: "国学",
+        pagePath: "pages/guoxue/index",
+        selectedIconPath:
+          "./assets/images/footer/https:baby_mychildbook-hover.png",
+        iconPath: "./assets/images/footer/https:baby_mychildbook.png",
+      },
+      {
+        text: "我的",
+        pagePath: "pages/mine/index",
+        selectedIconPath: "./assets/images/footer/https:baby_mychild-hover.png",
+        iconPath: "./assets/images/footer/https:baby_mychild.png",
       },
     ],
   },

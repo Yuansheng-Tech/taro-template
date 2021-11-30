@@ -34,9 +34,9 @@ module.exports = {
             }
         },
         lngs: ['en', 'zh', 'jp'],
-        ns: ['mengqi'],
+        ns: ['MetaStoryMedia'],
         defaultLng: 'zh',
-        defaultNs: 'mengqi',
+        defaultNs: 'MetaStoryMedia',
         // defaultValue: '__STRING_NOT_TRANSLATED__',
         resource: {
             loadPath: 'locales/{{lng}}/{{ns}}.json',

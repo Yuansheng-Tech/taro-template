@@ -1,8 +1,8 @@
 export default {
-  baseColor: { $mainColor: "#1296db", $redColor: "#e60000", $bgGray: "#eee" },
+  baseColor: { $mainColor: "#bae8e8", $redColor: "#e60000", $bgGray: "#eee" },
   SysConfig: {
-    appName: "梦企传媒",
-    slogen: "mengqi",
-    weappId: "25cfbf8b-a7a6-4215-89a9-0343cff14273",
+    appName: "MetaStoryMedia",
+    slogen: "Meta Story Media",
+    weappId: "681f45a0-566a-41ba-91f5-799ca0760ecd",
   },
 };
